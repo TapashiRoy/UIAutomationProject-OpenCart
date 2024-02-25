@@ -1,2 +1,2 @@
 # UIAutomationProject-OpenCart
-This project automates Opencart Website using Selenium and Java
+This project automates Opencart UI using Selenium and Java
