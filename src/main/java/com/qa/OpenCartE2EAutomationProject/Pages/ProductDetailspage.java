@@ -24,14 +24,13 @@ public class ProductDetailspage {
 	private By images = By.cssSelector("ul.thumbnails li");
 	private By navTab = By.cssSelector("ul.nav.nav-tabs li a");
 	private By reviewTab = By.cssSelector("a[href='#tab-review']");
-	// private By reviewMsg = By.xpath("//p[normalize-space()='There are no reviews
-	// for this product.']");
-	// private By errorReviewSubmit = By.cssSelector("i.fa.fa-exclamation-circle");
+	private By reviewMsg = By.xpath("//p[normalize-space()='There are no reviews for this product.']");
+	private By errorReviewSubmit = By.cssSelector("i.fa.fa-exclamation-circle");
 	private By reviewName = By.id("input-name");
 	private By reviewText = By.id("input-review");
 	private By ratingRadioButtons = By.cssSelector("div.col-sm-12");
 	private By continueButton = By.id("button-review");
-	// private By successMsg = By.cssSelector(".fa.fa-check-circle");
+	
 	private By rating1Button = By.xpath("(//input[@name='rating'])[1]");
 	private By productMetaData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[position()=1]//li");
 	private By productPriceData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[position()=2]//li");
