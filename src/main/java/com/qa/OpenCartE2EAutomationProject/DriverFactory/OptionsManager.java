@@ -25,15 +25,15 @@ public class OptionsManager {
 	
 	public EdgeOptions getEdgeOptions() {
 		eo = new EdgeOptions();		
-		if (Boolean.parseBoolean(prop.getProperty("headless").trim()))co.addArguments("--headless");
-		if (Boolean.parseBoolean(prop.getProperty("incognito").trim()))co.addArguments("--incognito");
+		if (Boolean.parseBoolean(prop.getProperty("headless").trim()))eo.addArguments("--headless");
+		if (Boolean.parseBoolean(prop.getProperty("incognito").trim()))eo.addArguments("--incognito");
 		return eo;
 	}
 	
 	public FirefoxOptions getFireFoxOptions() {
 		fo = new FirefoxOptions();
-		if (Boolean.parseBoolean(prop.getProperty("headless").trim()))co.addArguments("--headless");
-		if (Boolean.parseBoolean(prop.getProperty("incognito").trim()))co.addArguments("--incognito");
+		if (Boolean.parseBoolean(prop.getProperty("headless").trim()))fo.addArguments("--headless");
+		if (Boolean.parseBoolean(prop.getProperty("incognito").trim()))fo.addArguments("--incognito");
 		return fo; 
 	}
 }
