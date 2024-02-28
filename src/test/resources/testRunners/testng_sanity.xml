@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OpenCart Regression Suite" verbose="2" thread-count="4" parallel="tests">
+	
+	<listeners>		
+		<listener class-name="com.qa.OpenCartE2EAutomationProject.Listeners.ExtentReportListener" />	
+		<listener class-name="com.qa.OpenCartE2EAutomationProject.Listeners.AllureReportListener" />	
+		<listener class-name="com.qa.OpenCartE2EAutomationProject.Listeners.AnnotationTransformer" />		
+	</listeners>
+	
+	<test name="Login Page Test">
+		<classes>
+			<class name="com.qa.OpenCartE2EAutomationProject.Tests.LoginPageTest" />
+		</classes>
+	</test>
+		
+</suite>
