@@ -27,7 +27,7 @@ public class LoginPageTest extends BaseTest {
 		String actualUrl = loginPage.getLoginPageUrl();
 		Assert.assertTrue(actualUrl.contains(AppConstants.LOGIN_PAGE_URL));
 	}
-	
+
 	@Test(priority=3)
 	public void loginPageTextDisplayedTest() {
 		boolean flag = loginPage.isLoginPageTextIsDisplayed();

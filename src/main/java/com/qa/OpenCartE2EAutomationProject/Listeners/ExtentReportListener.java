@@ -18,13 +18,13 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.qa.OpenCartE2EAutomationProject.DriverFactory.DriverFactory;
 
 public class ExtentReportListener extends DriverFactory implements ITestListener {
-	
+
 
 	private static final String OUTPUT_FOLDER = "./reports/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
 
 	private static ExtentReports extent = init();
-	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
+	public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 	private static ExtentReports extentReports;
 
 	private static ExtentReports init() {

@@ -17,14 +17,14 @@ public class ViewCartPopuppage {
 		this.driver = driver;
 		eleUtil = new ElementUtil(driver);
 	}
-	
+
 	private By productNames = By.cssSelector(".table.table-striped td.text-left a");
-	
+
 	public ArrayList<String> getProductsInCart() {
-		List<WebElement> cartList = new ArrayList<WebElement>();
-		ArrayList<String> cartProdList = new ArrayList<String>();
+		List<WebElement> cartList = new ArrayList<>();
+		ArrayList<String> cartProdList = new ArrayList<>();
 		cartList = eleUtil.dofindElements(productNames);
-		
+
 		for(WebElement e: cartList) {
 			String text = e.getText();
 			cartProdList.add(text);

@@ -40,7 +40,7 @@ public class RegisterPageTest extends BaseTest {
 		Assert.assertTrue(flag);
 	}
 
-	public String randomEmailGenerator() {		
+	public String randomEmailGenerator() {
 		String autoEmail = "TestAutomation" + System.currentTimeMillis() + "@gmail.com";
 		return autoEmail;
 	}

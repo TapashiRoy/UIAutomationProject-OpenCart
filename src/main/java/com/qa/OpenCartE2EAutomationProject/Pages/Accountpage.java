@@ -10,13 +10,13 @@ import com.qa.OpenCartE2EAutomationProject.Utils.ElementUtil;
 public class Accountpage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
-	
+
 	public Accountpage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(driver);
 	}
 
-	// Locators for Accountpage	
+	// Locators for Accountpage
 	private By accountHeading = By.xpath("//h2[normalize-space()='My Account']");
 	private By ordersHeading = By.xpath("//h2[normalize-space()='My Orders']");
 	private By affiliateHeading = By.xpath("//h2[normalize-space()='My Affiliate Account']");
@@ -26,23 +26,23 @@ public class Accountpage {
 	private By logoutLink = By.linkText("Logout");
 	private By search = By.xpath("//input[@name='search']");
 	private By searchIcon = By.xpath("//i[@class='fa fa-search']");
-	
-	
+
+
 	//Accountpage Actions
 	public String getAccountPageTitle() {
-		String title = eleUtil.waitTitleIsAndFetch(AppConstants.ACCOUNT_PAGE_TITLE,AppConstants.DEFAULT_SHORT_TIME_OUT);				
+		String title = eleUtil.waitTitleIsAndFetch(AppConstants.ACCOUNT_PAGE_TITLE,AppConstants.DEFAULT_SHORT_TIME_OUT);
 		System.out.println("Account Page Title is :" + title);
 		return title;
 	}
-	
+
 	public String getAccountPageUrl() {
 		String url = eleUtil.waitURL(AppConstants.ACCOUNT_PAGE_URL, AppConstants.DEFAULT_SHORT_TIME_OUT);
 		System.out.println("Account Page URL is :" + url);
-		return url;		
+		return url;
 	}
-	
+
 	public boolean isMyAccountsHeadingDisplayed() {
-		boolean flag = eleUtil.isdisplayed(accountHeading);		
+		boolean flag = eleUtil.isdisplayed(accountHeading);
 		if(flag) {
 			System.out.println("My Account Heading is displayed in the page. ");
 		}
@@ -51,9 +51,9 @@ public class Accountpage {
 		}
 		return flag;
 	}
-	
+
 	public boolean isOrdersHeadingDisplayed() {
-		boolean flag = eleUtil.isdisplayed(ordersHeading);		
+		boolean flag = eleUtil.isdisplayed(ordersHeading);
 		if(flag) {
 			System.out.println("Orders Heading is displayed in the page. ");
 		}
@@ -62,7 +62,7 @@ public class Accountpage {
 		}
 		return flag;
 	}
-	
+
 	public boolean isMyAffiliateAccountHeadingDisplayed() {
 		boolean flag = eleUtil.isdisplayed(affiliateHeading);
 		if(flag) {
@@ -73,7 +73,7 @@ public class Accountpage {
 		}
 		return flag;
 	}
-	
+
 	public boolean isNewsLetterHeadingDisplayed() {
 		boolean flag = eleUtil.isdisplayed(newsletterHeading);
 		if(flag) {
@@ -84,14 +84,14 @@ public class Accountpage {
 		}
 		return flag;
 	}
-	
-	public int verifyHeadersCount() {		
+
+	public int verifyHeadersCount() {
 		int count = eleUtil.waitPresenceOfAllElements(accountPageHeaders, AppConstants.DEFAULT_SHORT_TIME_OUT).size();
 		System.out.println("Count of HeadersList in Accounts page: " + count);
 		return count;
 	}
-	
-	public boolean isRightPanelDisplayed() {		
+
+	public boolean isRightPanelDisplayed() {
 		boolean flag = eleUtil.isdisplayed(rightPanelList);
 		if(flag) {
 			System.out.println("Right Panel of Links is displayed in the page. ");
@@ -101,9 +101,9 @@ public class Accountpage {
 		}
 		return flag;
 	}
-	
+
 	public boolean isSearchDisplayed() {
-		boolean flag = eleUtil.isdisplayed(search);				
+		boolean flag = eleUtil.isdisplayed(search);
 		if (flag) {
 			System.out.println("Search exists in the page. ");
 		} else {
@@ -111,8 +111,8 @@ public class Accountpage {
 		}
 		return flag;
 	}
-	
-	public boolean isLogoutLinkDisplayed() {		
+
+	public boolean isLogoutLinkDisplayed() {
 		boolean flag = eleUtil.isdisplayed(logoutLink);
 		if(flag) {
 			System.out.println("Logout Link is displayed in the page. ");
@@ -122,7 +122,7 @@ public class Accountpage {
 		}
 		return flag;
 	}
-	
+
 	public ProductSearchpage doSearch(String searchKey) {
 		if(isSearchDisplayed()) {
 			eleUtil.dosendKeys(search, searchKey);
@@ -134,7 +134,7 @@ public class Accountpage {
 			return null;
 		}
 	}
-	
-	
-	
+
+
+
 }

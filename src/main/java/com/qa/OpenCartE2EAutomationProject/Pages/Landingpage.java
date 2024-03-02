@@ -12,7 +12,7 @@ import com.qa.OpenCartE2EAutomationProject.Utils.ElementUtil;
 
 public class Landingpage {
 	private WebDriver driver;
-	private ElementUtil eleUtil;	
+	private ElementUtil eleUtil;
 
 	public Landingpage(WebDriver driver) {
 		this.driver = driver;
@@ -21,7 +21,7 @@ public class Landingpage {
 
 	// Locators for Landing Page
 	private By currency = By.xpath("//span[normalize-space()='Currency']");
-	private By currencyDropDownMenu = By.xpath("//ul[@class='dropdown-menu']/li");	
+	private By currencyDropDownMenu = By.xpath("//ul[@class='dropdown-menu']/li");
 	private By contactNumber = By.cssSelector("i.fa.fa-phone");
 	private By myAccountLink = By.cssSelector("i.fa.fa-user");
 	private By myAccountMenuItems = By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//li");
@@ -37,20 +37,20 @@ public class Landingpage {
 	// Landing Page Actions
 
 	public String getLandingPageTitle() {
-		String title = eleUtil.waitTitleIsAndFetch(AppConstants.LANDING_PAGE_TITLE,AppConstants.DEFAULT_SHORT_TIME_OUT);	
+		String title = eleUtil.waitTitleIsAndFetch(AppConstants.LANDING_PAGE_TITLE,AppConstants.DEFAULT_SHORT_TIME_OUT);
 		System.out.println("Landing Page Title is :" + title);
 		return title;
 	}
 
 	public String getLandingPageUrl() {
-		String url = eleUtil.waitURL(AppConstants.LANDING_PAGE_URL, AppConstants.DEFAULT_SHORT_TIME_OUT);		
+		String url = eleUtil.waitURL(AppConstants.LANDING_PAGE_URL, AppConstants.DEFAULT_SHORT_TIME_OUT);
 		System.out.println("Landing Page URL is :" + url);
 		return url;
 	}
 
 	public boolean isCurrencyDropDownMenuDisplayed() {
 		eleUtil.waitPresenceOfElement(currency, AppConstants.DEFAULT_SHORT_TIME_OUT);
-		boolean flag = eleUtil.isdisplayed(currency);		
+		boolean flag = eleUtil.isdisplayed(currency);
 		if (flag) {
 			System.out.println("Currency Dropdown Menu exists in the page. ");
 		} else {
@@ -60,9 +60,9 @@ public class Landingpage {
 	}
 
 	public List<String> verifyCurrencyDropDownMenuItems() {
-		eleUtil.doActionsClick(currency);		
-		List<WebElement> items = eleUtil.dofindElements(currencyDropDownMenu);		
-		List<String> CurrencyDropDownItems = new ArrayList<String>();
+		eleUtil.doActionsClick(currency);
+		List<WebElement> items = eleUtil.dofindElements(currencyDropDownMenu);
+		List<String> CurrencyDropDownItems = new ArrayList<>();
 		for (WebElement e : items) {
 			String text = e.getText();
 			CurrencyDropDownItems.add(text);
@@ -70,8 +70,8 @@ public class Landingpage {
 		return CurrencyDropDownItems;
 	}
 
-	public boolean isPhoneNumberDisplayed() {		
-		boolean flag = eleUtil.isdisplayed(contactNumber);	
+	public boolean isPhoneNumberDisplayed() {
+		boolean flag = eleUtil.isdisplayed(contactNumber);
 		if (flag) {
 			System.out.println("contactNumber exists in the page. ");
 		} else {
@@ -80,8 +80,8 @@ public class Landingpage {
 		return flag;
 	}
 
-	public boolean isMyAccountLinkDisplayed() {		
-		boolean flag = eleUtil.isdisplayed(myAccountLink);	
+	public boolean isMyAccountLinkDisplayed() {
+		boolean flag = eleUtil.isdisplayed(myAccountLink);
 		if (flag) {
 			System.out.println("MyAccount Link exists in the page. ");
 		} else {
@@ -91,9 +91,9 @@ public class Landingpage {
 	}
 
 	public List<String> verifyMyAccountLinkMenuItems() {
-		eleUtil.doClickWithActionsAndWait(myAccountLink, AppConstants.DEFAULT_SHORT_TIME_OUT);			
+		eleUtil.doClickWithActionsAndWait(myAccountLink, AppConstants.DEFAULT_SHORT_TIME_OUT);
 		List<WebElement> items = driver.findElements(myAccountMenuItems);
-		List<String> myAccountDropDownItems = new ArrayList<String>();
+		List<String> myAccountDropDownItems = new ArrayList<>();
 		for (WebElement e : items) {
 			String text = e.getText();
 			myAccountDropDownItems.add(text);
@@ -102,7 +102,7 @@ public class Landingpage {
 		return myAccountDropDownItems;
 	}
 
-	public boolean isWishListDisplayed() {		
+	public boolean isWishListDisplayed() {
 		boolean flag = eleUtil.isdisplayed(wishList);
 		if (flag) {
 			System.out.println("wishList Link exists in the page. ");
@@ -112,7 +112,7 @@ public class Landingpage {
 		return flag;
 	}
 
-	public boolean isShoppingCartDisplayed() {		
+	public boolean isShoppingCartDisplayed() {
 		boolean flag =eleUtil.isdisplayed(shoppingCart);
 		if (flag) {
 			System.out.println("shoppingCart Link exists in the page. ");
@@ -122,7 +122,7 @@ public class Landingpage {
 		return flag;
 	}
 
-	public boolean isCheckOutDisplayed() {		
+	public boolean isCheckOutDisplayed() {
 		boolean flag = eleUtil.isdisplayed(checkout);
 		if (flag) {
 			System.out.println("checkout Link exists in the page. ");
@@ -132,7 +132,7 @@ public class Landingpage {
 		return flag;
 	}
 
-	public boolean isLogoDisplayed() {		
+	public boolean isLogoDisplayed() {
 		boolean flag = eleUtil.isdisplayed(logo);
 		if (flag) {
 			System.out.println("logo exists in the page. ");
@@ -142,7 +142,7 @@ public class Landingpage {
 		return flag;
 	}
 
-	public boolean isHeaderDisplayed() {		
+	public boolean isHeaderDisplayed() {
 		boolean flag = eleUtil.isdisplayed(headerMenuItems);
 		if (flag) {
 			System.out.println("Header Menu Items are displayed in the page. ");
@@ -152,10 +152,10 @@ public class Landingpage {
 		return flag;
 	}
 
-	public List<String> verifyHeaderMenuItems() {	
-		eleUtil.waitPresenceOfElement(headerMenuItems, AppConstants.DEFAULT_SHORT_TIME_OUT);	
+	public List<String> verifyHeaderMenuItems() {
+		eleUtil.waitPresenceOfElement(headerMenuItems, AppConstants.DEFAULT_SHORT_TIME_OUT);
 		List<WebElement> items = eleUtil.dofindElements(headerMenuItems);
-		List<String> headerMenuItems = new ArrayList<String>();
+		List<String> headerMenuItems = new ArrayList<>();
 		for (WebElement e : items) {
 			String text = e.getText();
 			headerMenuItems.add(text);
@@ -164,7 +164,7 @@ public class Landingpage {
 		return headerMenuItems;
 	}
 
-	public boolean isFeaturedProductsDisplayed() {		
+	public boolean isFeaturedProductsDisplayed() {
 		boolean flag = eleUtil.isdisplayed(featuredProducts);
 		if (flag) {
 			System.out.println("Featured Products are displayed in the page. ");
@@ -175,7 +175,7 @@ public class Landingpage {
 	}
 
 	public int verifyFeaturedProductsCount() {
-		int number = eleUtil.getTotalElementsCount(featuredProducts);		
+		int number = eleUtil.getTotalElementsCount(featuredProducts);
 		System.out.println("Number of Featured Products displayed are : " + number);
 		return number;
 	}
@@ -186,7 +186,7 @@ public class Landingpage {
 		return number;
 	}
 
-	public String verifyFooterText() {		
+	public String verifyFooterText() {
 		String text =eleUtil.dogetText(footerText);
 		return text;
 	}

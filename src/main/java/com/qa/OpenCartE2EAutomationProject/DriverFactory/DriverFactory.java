@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 
 import org.aspectj.util.FileUtil;
@@ -13,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.qa.OpenCartE2EAutomationProject.Exceptions.FrameworkExceptions;
 
@@ -23,7 +25,7 @@ public class DriverFactory {
 	public OptionsManager op;
 	FileInputStream ip;
 
-	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
+	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
 	/**
 	 * This method is initializing the driver
@@ -33,26 +35,79 @@ public class DriverFactory {
 		String browserName = prop.getProperty("browser");
 		System.out.println("The browser name is : " + browserName);
 
-		// Setting the Threadlocal drivers
 		if (browserName.trim().equalsIgnoreCase("chrome")) {
-			tlDriver.set(new ChromeDriver(op.getChromeOptions()));
-		} else if (browserName.trim().equalsIgnoreCase("firefox")) {
-			tlDriver.set(new FirefoxDriver(op.getFireFoxOptions()));
-		} else if (browserName.trim().equalsIgnoreCase("Edge")) {
-			tlDriver.set(new EdgeDriver(op.getEdgeOptions()));
-		} else {
+			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+				//Running the TCs in a remote machine
+				init_remoteDriver("chrome");
+			}
+			else {
+				//Running the TCs locally
+				tlDriver.set(new ChromeDriver(op.getChromeOptions()));
+			}
+		}
+
+		else if(browserName.trim().equalsIgnoreCase("firefox")) {
+			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+				//Running the TCs in a remote machine
+				init_remoteDriver("firefox");
+			}
+			else {
+				//Running the TCs locally
+				tlDriver.set(new FirefoxDriver(op.getFireFoxOptions()));
+			}
+
+		}
+
+		else if(browserName.trim().equalsIgnoreCase("Edge")) {
+			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+				//Running the TCs in a remote machine
+				init_remoteDriver("Edge");
+			}
+			else {
+				//Running the TCs locally
+				tlDriver.set(new EdgeDriver(op.getEdgeOptions()));
+			}
+		}
+
+		else {
 			System.out.println("Please pass the correct Browser name");
 		}
+
 		getThreadLocalDriver().manage().deleteAllCookies();
 		getThreadLocalDriver().manage().window().maximize();
 		getThreadLocalDriver().get(prop.getProperty("url"));
 		return getThreadLocalDriver();
 	}
 
+	private void init_remoteDriver(String browserName) {
+
+		System.out.println("Running tests on Selenim GRID with browser: " + browserName);
+
+		try {
+			switch (browserName) {
+			case "chrome":
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), op.getChromeOptions()));
+				break;
+			case "Edge":
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), op.getEdgeOptions()));
+				break;
+			case "firefox":
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), op.getFireFoxOptions()));
+				break;
+			default:
+				System.out.println("Wrong browser info....can not run on grid remote machine....");
+				throw new FrameworkExceptions("NO REMOTE BROWSER AVAILABLE");
+			}
+
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+
 	/**
-	 * This method will return the ThreadLocal synchronized version of the driver
-	 * 
-	 * @return
+	 * This method will return the ThreadLocal synchronized version of the driver	
 	 */
 
 	public synchronized static WebDriver getThreadLocalDriver() {
@@ -88,8 +143,8 @@ public class DriverFactory {
 				case "PROD":
 					ip = new FileInputStream("./src/test/resources/config/prod.config.properties");
 					break;
-				default:					
-					throw new FrameworkExceptions("Wrong environment details are passed");	
+				default:
+					throw new FrameworkExceptions("Wrong environment details are passed");
 				}
 			}
 

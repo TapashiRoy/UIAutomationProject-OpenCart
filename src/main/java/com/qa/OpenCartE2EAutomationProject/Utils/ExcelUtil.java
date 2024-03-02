@@ -9,7 +9,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtil {
-	
+
 	private static final String path = "./src/test/resources/testData/OpenCartData.xlsx";
 	private static Workbook book;
 	private static Sheet sheet;

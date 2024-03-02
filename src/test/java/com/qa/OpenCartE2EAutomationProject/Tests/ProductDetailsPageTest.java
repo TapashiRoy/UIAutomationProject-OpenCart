@@ -55,12 +55,12 @@ public class ProductDetailsPageTest extends BaseTest {
 	 * "Thank you for your review. It has been submitted to the webmaster for approval."
 	 * ); }
 	 */
-	
+
 	@DataProvider
 	public Object[][] prodData() {
 		return new Object[][] { { "MacBook", "MacBook Pro", "Apple", "In Stock", "Product 18", "800", "$2,000.00" } };
 	}
-	
+
 
 	@Test(dataProvider = "prodData", priority = 2)
 	public void getProductDetailsTest(String key, String prod, String Brand, String isAvailable, String code, String reward, String price) {
@@ -78,23 +78,23 @@ public class ProductDetailsPageTest extends BaseTest {
 
 		softAssert.assertAll();
 	}
-	
+
 	@DataProvider
 	public Object[][] cartData() {
 		return new Object[][] { { "MacBook", "MacBook Pro", 1}};
 	}
-	
+
 	@Test(dataProvider = "cartData", priority = 3)
 	public void productAddToCartTest(String key,String prod, int quantity) {
 		psPage = accountPage.doSearch(key);
 		pdPage = psPage.selectProduct(prod);
 		pdPage.enterQuantity(quantity);
-		String successMsg = pdPage.addProductToCart();		
-		Assert.assertEquals(successMsg, "Success: You have added " + prod +" to your shopping cart!");	
-		
+		String successMsg = pdPage.addProductToCart();
+		Assert.assertEquals(successMsg, "Success: You have added " + prod +" to your shopping cart!");
+
 		vcPage = pdPage.openCart();
 		ArrayList<String> cartItems = vcPage.getProductsInCart();
-		
+
 	}
 
 }

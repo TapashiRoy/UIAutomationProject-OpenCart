@@ -2,7 +2,6 @@ package com.qa.OpenCartE2EAutomationProject.Utils;
 
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Set;
@@ -115,7 +114,7 @@ public class ElementUtil {
 	}
 
 	public List<String> getElementsText(By locator) {
-		List<String> eTextList = new ArrayList<String>();
+		List<String> eTextList = new ArrayList<>();
 		List<WebElement> elist = dofindElements(locator);
 		for (WebElement e : elist) {
 			String text = e.getText();
@@ -147,7 +146,7 @@ public class ElementUtil {
 
 	public List<String> getAllTextValuesInDropDownList(By locator) {
 		List<WebElement> optionslist = getDropDownOptions(locator);
-		List<String> TextList = new ArrayList<String>();
+		List<String> TextList = new ArrayList<>();
 		for (WebElement e : optionslist) {
 			String text = e.getText();
 			TextList.add(text);
@@ -192,9 +191,7 @@ public class ElementUtil {
 	public void SwitchWindow(By locator) {
 		driver.findElement(locator).click();
 		Set<String> getAllWindowHandles = driver.getWindowHandles();
-		Iterator<String> it = getAllWindowHandles.iterator();
-		while (it.hasNext()) {
-			String WindowID = it.next();
+		for (String WindowID : getAllWindowHandles) {
 			driver.switchTo().window(WindowID);
 			System.out.println("The current URL is:" + driver.getCurrentUrl());
 			driver.close();
@@ -296,7 +293,7 @@ public class ElementUtil {
 	/**
 	 * An expectation for checking an element is visible and enabled such that you
 	 * can click it.
-	 * 
+	 *
 	 * @param locator
 	 * @param timeout
 	 */
@@ -318,7 +315,7 @@ public class ElementUtil {
 
 	/**
 	 * The below method not so widely used,
-	 * 
+	 *
 	 * @param locator
 	 * @param timeout
 	 * @param windownumber
@@ -330,7 +327,7 @@ public class ElementUtil {
 	}
 
 	public WebElement waitForElementPresenceWithFluentWait(By locator, int timeout, int pollingtime) {
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(timeout))
+		Wait<WebDriver> wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(timeout))
 				.ignoring(NoSuchElementException.class).ignoring(StaleElementReferenceException.class)
 				.pollingEvery(Duration.ofSeconds(pollingtime)).withMessage("Selenium cannot find the Element");
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
@@ -338,7 +335,7 @@ public class ElementUtil {
 	}
 
 	public void waitForAlertPresenceWithFluentWait(int timeout, int pollingtime) {
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(timeout))
+		Wait<WebDriver> wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(timeout))
 				.ignoring(NoAlertPresentException.class).ignoring(StaleElementReferenceException.class)
 				.pollingEvery(Duration.ofSeconds(pollingtime)).withMessage("Alert not Found");
 		wait.until(ExpectedConditions.alertIsPresent());

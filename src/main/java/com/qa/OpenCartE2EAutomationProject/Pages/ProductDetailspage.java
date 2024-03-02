@@ -30,7 +30,7 @@ public class ProductDetailspage {
 	private By reviewText = By.id("input-review");
 	private By ratingRadioButtons = By.cssSelector("div.col-sm-12");
 	private By continueButton = By.id("button-review");
-	
+
 	private By rating1Button = By.xpath("(//input[@name='rating'])[1]");
 	private By productMetaData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[position()=1]//li");
 	private By productPriceData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[position()=2]//li");
@@ -72,7 +72,7 @@ public class ProductDetailspage {
 	}
 
 	public Map<String, String> getProductInfo() {
-		prodInfoMap = new LinkedHashMap<String, String>();
+		prodInfoMap = new LinkedHashMap<>();
 		// Header
 		prodInfoMap.put("ProductHeader", getProductHeaderValue());
 		getProductMetaData();
