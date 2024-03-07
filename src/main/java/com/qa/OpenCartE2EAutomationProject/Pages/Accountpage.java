@@ -1,15 +1,20 @@
 package com.qa.OpenCartE2EAutomationProject.Pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.qa.OpenCartE2EAutomationProject.Constants.AppConstants;
+import com.qa.OpenCartE2EAutomationProject.DriverFactory.DriverFactory;
 import com.qa.OpenCartE2EAutomationProject.Utils.ElementUtil;
 
 
 public class Accountpage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	
+	private static final Logger log = LogManager.getLogger(Accountpage.class);
 
 	public Accountpage(WebDriver driver) {
 		this.driver = driver;
@@ -31,23 +36,23 @@ public class Accountpage {
 	//Accountpage Actions
 	public String getAccountPageTitle() {
 		String title = eleUtil.waitTitleIsAndFetch(AppConstants.ACCOUNT_PAGE_TITLE,AppConstants.DEFAULT_SHORT_TIME_OUT);
-		System.out.println("Account Page Title is :" + title);
+		log.info("Account Page Title is :" + title);
 		return title;
 	}
 
 	public String getAccountPageUrl() {
 		String url = eleUtil.waitURL(AppConstants.ACCOUNT_PAGE_URL, AppConstants.DEFAULT_SHORT_TIME_OUT);
-		System.out.println("Account Page URL is :" + url);
+		log.info("Account Page URL is :" + url);
 		return url;
 	}
 
 	public boolean isMyAccountsHeadingDisplayed() {
 		boolean flag = eleUtil.isdisplayed(accountHeading);
 		if(flag) {
-			System.out.println("My Account Heading is displayed in the page. ");
+			log.info("My Account Heading is displayed in the page. ");
 		}
 		else {
-			System.out.println("My Account Heading is missing in the page. ");
+			log.info("My Account Heading is missing in the page. ");
 		}
 		return flag;
 	}
@@ -55,10 +60,10 @@ public class Accountpage {
 	public boolean isOrdersHeadingDisplayed() {
 		boolean flag = eleUtil.isdisplayed(ordersHeading);
 		if(flag) {
-			System.out.println("Orders Heading is displayed in the page. ");
+			log.info("Orders Heading is displayed in the page. ");
 		}
 		else {
-			System.out.println("Orders Heading is missing in the page. ");
+			log.info("Orders Heading is missing in the page. ");
 		}
 		return flag;
 	}
@@ -66,10 +71,10 @@ public class Accountpage {
 	public boolean isMyAffiliateAccountHeadingDisplayed() {
 		boolean flag = eleUtil.isdisplayed(affiliateHeading);
 		if(flag) {
-			System.out.println("My Affiliate Account Heading is displayed in the page. ");
+			log.info("My Affiliate Account Heading is displayed in the page. ");
 		}
 		else {
-			System.out.println("My Affiliate Account Heading is missing in the page. ");
+			log.info("My Affiliate Account Heading is missing in the page. ");
 		}
 		return flag;
 	}
@@ -77,27 +82,27 @@ public class Accountpage {
 	public boolean isNewsLetterHeadingDisplayed() {
 		boolean flag = eleUtil.isdisplayed(newsletterHeading);
 		if(flag) {
-			System.out.println("NewsLetter Heading is displayed in the page. ");
+			log.info("NewsLetter Heading is displayed in the page. ");
 		}
 		else {
-			System.out.println("NewsLetter Heading is missing in the page. ");
+			log.info("NewsLetter Heading is missing in the page. ");
 		}
 		return flag;
 	}
 
 	public int verifyHeadersCount() {
 		int count = eleUtil.waitPresenceOfAllElements(accountPageHeaders, AppConstants.DEFAULT_SHORT_TIME_OUT).size();
-		System.out.println("Count of HeadersList in Accounts page: " + count);
+		log.info("Count of HeadersList in Accounts page: " + count);
 		return count;
 	}
 
 	public boolean isRightPanelDisplayed() {
 		boolean flag = eleUtil.isdisplayed(rightPanelList);
 		if(flag) {
-			System.out.println("Right Panel of Links is displayed in the page. ");
+			log.info("Right Panel of Links is displayed in the page. ");
 		}
 		else {
-			System.out.println("Right Panel of Links is missing in the page. ");
+			log.info("Right Panel of Links is missing in the page. ");
 		}
 		return flag;
 	}
@@ -105,9 +110,9 @@ public class Accountpage {
 	public boolean isSearchDisplayed() {
 		boolean flag = eleUtil.isdisplayed(search);
 		if (flag) {
-			System.out.println("Search exists in the page. ");
+			log.info("Search exists in the page. ");
 		} else {
-			System.out.println("Search is missing in the page. ");
+			log.info("Search is missing in the page. ");
 		}
 		return flag;
 	}
@@ -115,10 +120,10 @@ public class Accountpage {
 	public boolean isLogoutLinkDisplayed() {
 		boolean flag = eleUtil.isdisplayed(logoutLink);
 		if(flag) {
-			System.out.println("Logout Link is displayed in the page. ");
+			log.info("Logout Link is displayed in the page. ");
 		}
 		else {
-			System.out.println("Logout Link is missing in the page. ");
+			log.info("Logout Link is missing in the page. ");
 		}
 		return flag;
 	}
@@ -130,7 +135,7 @@ public class Accountpage {
 			return new ProductSearchpage(driver);
 		}
 		else {
-			System.out.println("Search is missing in the page. ");
+			log.info("Search is missing in the page. ");
 			return null;
 		}
 	}

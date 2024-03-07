@@ -3,6 +3,8 @@ package com.qa.OpenCartE2EAutomationProject.Pages;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +15,8 @@ import com.qa.OpenCartE2EAutomationProject.Utils.ElementUtil;
 public class Landingpage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	
+	private static final Logger log = LogManager.getLogger(Landingpage.class);
 
 	public Landingpage(WebDriver driver) {
 		this.driver = driver;
@@ -38,13 +42,13 @@ public class Landingpage {
 
 	public String getLandingPageTitle() {
 		String title = eleUtil.waitTitleIsAndFetch(AppConstants.LANDING_PAGE_TITLE,AppConstants.DEFAULT_SHORT_TIME_OUT);
-		System.out.println("Landing Page Title is :" + title);
+		log.info("Landing Page Title is :" + title);
 		return title;
 	}
 
 	public String getLandingPageUrl() {
 		String url = eleUtil.waitURL(AppConstants.LANDING_PAGE_URL, AppConstants.DEFAULT_SHORT_TIME_OUT);
-		System.out.println("Landing Page URL is :" + url);
+		log.info("Landing Page URL is :" + url);
 		return url;
 	}
 
@@ -52,9 +56,9 @@ public class Landingpage {
 		eleUtil.waitPresenceOfElement(currency, AppConstants.DEFAULT_SHORT_TIME_OUT);
 		boolean flag = eleUtil.isdisplayed(currency);
 		if (flag) {
-			System.out.println("Currency Dropdown Menu exists in the page. ");
+			log.info("Currency Dropdown Menu exists in the page. ");
 		} else {
-			System.out.println("Currency Dropdown Menu is missing in the page. ");
+			log.info("Currency Dropdown Menu is missing in the page. ");
 		}
 		return flag;
 	}
@@ -73,9 +77,9 @@ public class Landingpage {
 	public boolean isPhoneNumberDisplayed() {
 		boolean flag = eleUtil.isdisplayed(contactNumber);
 		if (flag) {
-			System.out.println("contactNumber exists in the page. ");
+			log.info("contactNumber exists in the page. ");
 		} else {
-			System.out.println("contactNumber is missing in the page. ");
+			log.info("contactNumber is missing in the page. ");
 		}
 		return flag;
 	}
@@ -83,9 +87,9 @@ public class Landingpage {
 	public boolean isMyAccountLinkDisplayed() {
 		boolean flag = eleUtil.isdisplayed(myAccountLink);
 		if (flag) {
-			System.out.println("MyAccount Link exists in the page. ");
+			log.info("MyAccount Link exists in the page. ");
 		} else {
-			System.out.println("MyAccount Link is missing in the page. ");
+			log.info("MyAccount Link is missing in the page. ");
 		}
 		return flag;
 	}
@@ -98,16 +102,16 @@ public class Landingpage {
 			String text = e.getText();
 			myAccountDropDownItems.add(text);
 		}
-		System.out.println(myAccountDropDownItems);
+		log.info(myAccountDropDownItems);
 		return myAccountDropDownItems;
 	}
 
 	public boolean isWishListDisplayed() {
 		boolean flag = eleUtil.isdisplayed(wishList);
 		if (flag) {
-			System.out.println("wishList Link exists in the page. ");
+			log.info("wishList Link exists in the page. ");
 		} else {
-			System.out.println("wishList Link is missing in the page. ");
+			log.info("wishList Link is missing in the page. ");
 		}
 		return flag;
 	}
@@ -115,9 +119,9 @@ public class Landingpage {
 	public boolean isShoppingCartDisplayed() {
 		boolean flag =eleUtil.isdisplayed(shoppingCart);
 		if (flag) {
-			System.out.println("shoppingCart Link exists in the page. ");
+			log.info("shoppingCart Link exists in the page. ");
 		} else {
-			System.out.println("shoppingCart Link is missing in the page. ");
+			log.info("shoppingCart Link is missing in the page. ");
 		}
 		return flag;
 	}
@@ -125,9 +129,9 @@ public class Landingpage {
 	public boolean isCheckOutDisplayed() {
 		boolean flag = eleUtil.isdisplayed(checkout);
 		if (flag) {
-			System.out.println("checkout Link exists in the page. ");
+			log.info("checkout Link exists in the page. ");
 		} else {
-			System.out.println("checkout Link is missing in the page. ");
+			log.info("checkout Link is missing in the page. ");
 		}
 		return flag;
 	}
@@ -135,9 +139,9 @@ public class Landingpage {
 	public boolean isLogoDisplayed() {
 		boolean flag = eleUtil.isdisplayed(logo);
 		if (flag) {
-			System.out.println("logo exists in the page. ");
+			log.info("logo exists in the page. ");
 		} else {
-			System.out.println("logo is missing in the page. ");
+			log.info("logo is missing in the page. ");
 		}
 		return flag;
 	}
@@ -145,9 +149,9 @@ public class Landingpage {
 	public boolean isHeaderDisplayed() {
 		boolean flag = eleUtil.isdisplayed(headerMenuItems);
 		if (flag) {
-			System.out.println("Header Menu Items are displayed in the page. ");
+			log.info("Header Menu Items are displayed in the page. ");
 		} else {
-			System.out.println("Header Menu Items are missing in the page. ");
+			log.info("Header Menu Items are missing in the page. ");
 		}
 		return flag;
 	}
@@ -160,29 +164,29 @@ public class Landingpage {
 			String text = e.getText();
 			headerMenuItems.add(text);
 		}
-		System.out.println(headerMenuItems);
+		log.info(headerMenuItems);
 		return headerMenuItems;
 	}
 
 	public boolean isFeaturedProductsDisplayed() {
 		boolean flag = eleUtil.isdisplayed(featuredProducts);
 		if (flag) {
-			System.out.println("Featured Products are displayed in the page. ");
+			log.info("Featured Products are displayed in the page. ");
 		} else {
-			System.out.println("Featured Products are missing in the page. ");
+			log.info("Featured Products are missing in the page. ");
 		}
 		return flag;
 	}
 
 	public int verifyFeaturedProductsCount() {
 		int number = eleUtil.getTotalElementsCount(featuredProducts);
-		System.out.println("Number of Featured Products displayed are : " + number);
+		log.info("Number of Featured Products displayed are : " + number);
 		return number;
 	}
 
 	public int verifyFooterMenuItemsCount() {
 		int number = eleUtil.getTotalElementsCount(footerMenuItems);
-		System.out.println("Number of Footer Menu Items are : " + number);
+		log.info("Number of Footer Menu Items are : " + number);
 		return number;
 	}
 

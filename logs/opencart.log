@@ -1,0 +1,611 @@
+2024-03-07 20:24:21 INFO  AccountPageTest:28 - The actual Account Page Title is : My Account
+2024-03-07 20:24:21 INFO  AccountPageTest:35 - The actual Account Page URL is : https://naveenautomationlabs.com/opencart/index.php?route=account/account
+2024-03-07 20:49:41 INFO  AllureReportListener:44 - Execution started Account Page Test
+2024-03-07 20:49:41 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:49:41 INFO  DriverFactory:128 - Running the TCs in null
+2024-03-07 20:49:41 INFO  DriverFactory:132 - No environment is passed, so running the TCs in QA Environment
+2024-03-07 20:49:41 INFO  DriverFactory:41 - The browser name is : chrome
+2024-03-07 20:49:50 INFO  AllureReportListener:54 - Execution started LogoutLinkDisplayedTest
+2024-03-07 20:49:50 INFO  ExtentReportListener:65 - LogoutLinkDisplayedTest started!
+2024-03-07 20:49:50 INFO  Accountpage:123 - Logout Link is displayed in the page. 
+2024-03-07 20:49:50 INFO  AllureReportListener:59 - LogoutLinkDisplayedTest succeed
+2024-03-07 20:49:50 INFO  ExtentReportListener:96 - LogoutLinkDisplayedTest passed!
+2024-03-07 20:49:50 INFO  AllureReportListener:54 - Execution started MyAccountsHeadingDisplayedTest
+2024-03-07 20:49:50 INFO  ExtentReportListener:65 - MyAccountsHeadingDisplayedTest started!
+2024-03-07 20:49:50 INFO  Accountpage:52 - My Account Heading is displayed in the page. 
+2024-03-07 20:49:50 INFO  AllureReportListener:59 - MyAccountsHeadingDisplayedTest succeed
+2024-03-07 20:49:50 INFO  ExtentReportListener:96 - MyAccountsHeadingDisplayedTest passed!
+2024-03-07 20:49:50 INFO  AllureReportListener:54 - Execution started MyAffiliateAccountHeadingDisplayedTest
+2024-03-07 20:49:50 INFO  ExtentReportListener:65 - MyAffiliateAccountHeadingDisplayedTest started!
+2024-03-07 20:49:50 INFO  Accountpage:74 - My Affiliate Account Heading is displayed in the page. 
+2024-03-07 20:49:50 INFO  AllureReportListener:59 - MyAffiliateAccountHeadingDisplayedTest succeed
+2024-03-07 20:49:50 INFO  ExtentReportListener:96 - MyAffiliateAccountHeadingDisplayedTest passed!
+2024-03-07 20:49:50 INFO  AllureReportListener:54 - Execution started NewsLetterHeadingDisplayedTest
+2024-03-07 20:49:50 INFO  ExtentReportListener:65 - NewsLetterHeadingDisplayedTest started!
+2024-03-07 20:49:51 INFO  Accountpage:85 - NewsLetter Heading is displayed in the page. 
+2024-03-07 20:49:51 INFO  AllureReportListener:59 - NewsLetterHeadingDisplayedTest succeed
+2024-03-07 20:49:51 INFO  ExtentReportListener:96 - NewsLetterHeadingDisplayedTest passed!
+2024-03-07 20:49:51 INFO  AllureReportListener:54 - Execution started OrdersHeadingDisplayedTest
+2024-03-07 20:49:51 INFO  ExtentReportListener:65 - OrdersHeadingDisplayedTest started!
+2024-03-07 20:49:51 INFO  Accountpage:63 - Orders Heading is displayed in the page. 
+2024-03-07 20:49:51 INFO  AllureReportListener:59 - OrdersHeadingDisplayedTest succeed
+2024-03-07 20:49:51 INFO  ExtentReportListener:96 - OrdersHeadingDisplayedTest passed!
+2024-03-07 20:49:51 INFO  AllureReportListener:54 - Execution started RightPanelDisplayedTest
+2024-03-07 20:49:51 INFO  ExtentReportListener:65 - RightPanelDisplayedTest started!
+2024-03-07 20:49:51 INFO  Accountpage:102 - Right Panel of Links is displayed in the page. 
+2024-03-07 20:49:51 INFO  AllureReportListener:59 - RightPanelDisplayedTest succeed
+2024-03-07 20:49:51 INFO  ExtentReportListener:96 - RightPanelDisplayedTest passed!
+2024-03-07 20:49:51 INFO  AllureReportListener:54 - Execution started accountPageTitleTest
+2024-03-07 20:49:51 INFO  ExtentReportListener:65 - accountPageTitleTest started!
+2024-03-07 20:49:51 INFO  Accountpage:39 - Account Page Title is :My Account
+2024-03-07 20:49:51 INFO  AccountPageTest:28 - The actual Account Page Title is : My Account
+2024-03-07 20:49:51 INFO  AllureReportListener:59 - accountPageTitleTest succeed
+2024-03-07 20:49:51 INFO  ExtentReportListener:96 - accountPageTitleTest passed!
+2024-03-07 20:49:51 INFO  AllureReportListener:54 - Execution started accountPageUrlTest
+2024-03-07 20:49:51 INFO  ExtentReportListener:65 - accountPageUrlTest started!
+2024-03-07 20:49:51 INFO  Accountpage:45 - Account Page URL is :https://naveenautomationlabs.com/opencart/index.php?route=account/account
+2024-03-07 20:49:51 INFO  AccountPageTest:35 - The actual Account Page URL is : https://naveenautomationlabs.com/opencart/index.php?route=account/account
+2024-03-07 20:49:51 INFO  AllureReportListener:59 - accountPageUrlTest succeed
+2024-03-07 20:49:51 INFO  ExtentReportListener:96 - accountPageUrlTest passed!
+2024-03-07 20:49:51 INFO  AllureReportListener:54 - Execution started searchBarDisplayedTest
+2024-03-07 20:49:51 INFO  ExtentReportListener:65 - searchBarDisplayedTest started!
+2024-03-07 20:49:51 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:49:51 INFO  AllureReportListener:59 - searchBarDisplayedTest succeed
+2024-03-07 20:49:51 INFO  ExtentReportListener:96 - searchBarDisplayedTest passed!
+2024-03-07 20:49:51 INFO  AllureReportListener:54 - Execution started verifyHeadersCountTest
+2024-03-07 20:49:51 INFO  ExtentReportListener:65 - verifyHeadersCountTest started!
+2024-03-07 20:49:51 INFO  Accountpage:95 - Count of HeadersList in Accounts page: 4
+2024-03-07 20:49:51 INFO  AllureReportListener:59 - verifyHeadersCountTest succeed
+2024-03-07 20:49:51 INFO  ExtentReportListener:96 - verifyHeadersCountTest passed!
+2024-03-07 20:49:51 INFO  AllureReportListener:54 - Execution started searchProductCountTest
+2024-03-07 20:49:51 INFO  ExtentReportListener:65 - searchProductCountTest started!
+2024-03-07 20:49:51 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:49:52 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 3
+2024-03-07 20:49:52 INFO  AllureReportListener:59 - searchProductCountTest succeed
+2024-03-07 20:49:52 INFO  ExtentReportListener:96 - searchProductCountTest passed!
+2024-03-07 20:49:52 INFO  AllureReportListener:54 - Execution started searchProductCountTest
+2024-03-07 20:49:52 INFO  ExtentReportListener:65 - searchProductCountTest started!
+2024-03-07 20:49:52 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:49:53 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 2
+2024-03-07 20:49:53 INFO  AllureReportListener:59 - searchProductCountTest succeed
+2024-03-07 20:49:53 INFO  ExtentReportListener:96 - searchProductCountTest passed!
+2024-03-07 20:49:53 INFO  AllureReportListener:54 - Execution started searchProductCountTest
+2024-03-07 20:49:53 INFO  ExtentReportListener:65 - searchProductCountTest started!
+2024-03-07 20:49:53 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:49:54 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 1
+2024-03-07 20:49:54 INFO  AllureReportListener:59 - searchProductCountTest succeed
+2024-03-07 20:49:54 INFO  ExtentReportListener:96 - searchProductCountTest passed!
+2024-03-07 20:49:54 INFO  AllureReportListener:54 - Execution started sortByDropDownListTest
+2024-03-07 20:49:54 INFO  ExtentReportListener:65 - sortByDropDownListTest started!
+2024-03-07 20:49:55 INFO  ProductSearchpage:48 - Number of products displayed in the Search is : 9
+2024-03-07 20:49:55 INFO  AllureReportListener:59 - sortByDropDownListTest succeed
+2024-03-07 20:49:55 INFO  ExtentReportListener:96 - sortByDropDownListTest passed!
+2024-03-07 20:49:55 INFO  AllureReportListener:54 - Execution started showByDropDownListTest
+2024-03-07 20:49:55 INFO  ExtentReportListener:65 - showByDropDownListTest started!
+2024-03-07 20:49:56 INFO  ProductSearchpage:56 - Number of products displayed in the Search is : 5
+2024-03-07 20:49:56 INFO  AllureReportListener:59 - showByDropDownListTest succeed
+2024-03-07 20:49:56 INFO  ExtentReportListener:96 - showByDropDownListTest passed!
+2024-03-07 20:49:56 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:49:56 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:49:56 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:49:56 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 3
+2024-03-07 20:49:58 INFO  ProductDetailspage:52 - Product Header is: MacBook Pro
+2024-03-07 20:49:58 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:49:58 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:49:58 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:49:58 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:49:58 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:49:58 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 2
+2024-03-07 20:49:59 INFO  ProductDetailspage:52 - Product Header is: Samsung Galaxy Tab 10.1
+2024-03-07 20:49:59 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:49:59 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:49:59 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:49:59 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:49:59 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:50:00 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 1
+2024-03-07 20:50:01 INFO  ProductDetailspage:52 - Product Header is: Apple Cinema 30"
+2024-03-07 20:50:01 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:50:01 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:50:01 INFO  AllureReportListener:49 - Execution finished Account Page Test
+2024-03-07 20:50:01 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:50:02 INFO  AllureReportListener:44 - Execution started ProductDetails Page Test
+2024-03-07 20:50:02 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:50:02 INFO  DriverFactory:128 - Running the TCs in null
+2024-03-07 20:50:02 INFO  DriverFactory:132 - No environment is passed, so running the TCs in QA Environment
+2024-03-07 20:50:02 INFO  DriverFactory:41 - The browser name is : chrome
+2024-03-07 20:50:08 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:50:08 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:50:08 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:50:09 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 3
+2024-03-07 20:50:10 INFO  ProductDetailspage:52 - Product Header is: MacBook Pro
+2024-03-07 20:50:10 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:50:10 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:50:10 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:50:10 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:50:10 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:50:11 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 2
+2024-03-07 20:50:12 INFO  ProductDetailspage:52 - Product Header is: Samsung Galaxy Tab 10.1
+2024-03-07 20:50:12 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:50:12 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:50:12 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:50:12 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:50:12 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:50:12 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 1
+2024-03-07 20:50:13 INFO  ProductDetailspage:52 - Product Header is: Apple Cinema 30"
+2024-03-07 20:50:13 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:50:13 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:50:13 INFO  AllureReportListener:54 - Execution started getProductDetailsTest
+2024-03-07 20:50:13 INFO  ExtentReportListener:65 - getProductDetailsTest started!
+2024-03-07 20:50:13 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:50:15 INFO  ProductDetailspage:52 - Product Header is: MacBook Pro
+2024-03-07 20:50:15 INFO  AllureReportListener:59 - getProductDetailsTest succeed
+2024-03-07 20:50:15 INFO  ExtentReportListener:96 - getProductDetailsTest passed!
+2024-03-07 20:50:15 INFO  AllureReportListener:54 - Execution started isDescriptionAndReviewsDisplayed
+2024-03-07 20:50:15 INFO  ExtentReportListener:65 - isDescriptionAndReviewsDisplayed started!
+2024-03-07 20:50:15 INFO  AllureReportListener:59 - isDescriptionAndReviewsDisplayed succeed
+2024-03-07 20:50:15 INFO  ExtentReportListener:96 - isDescriptionAndReviewsDisplayed passed!
+2024-03-07 20:50:15 INFO  AllureReportListener:54 - Execution started productAddToCartTest
+2024-03-07 20:50:15 INFO  ExtentReportListener:65 - productAddToCartTest started!
+2024-03-07 20:50:15 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:50:16 INFO  ProductDetailspage:110 - Product Quantity is: 1
+2024-03-07 20:50:17 INFO  ProductDetailspage:122 - Cart Success Message is : Success: You have added MacBook Pro to your shopping cart!
+2024-03-07 20:50:17 INFO  AllureReportListener:59 - productAddToCartTest succeed
+2024-03-07 20:50:17 INFO  ExtentReportListener:96 - productAddToCartTest passed!
+2024-03-07 20:50:17 INFO  AllureReportListener:49 - Execution finished ProductDetails Page Test
+2024-03-07 20:50:17 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:50:17 INFO  AllureReportListener:44 - Execution started Landing Page Test_firefox
+2024-03-07 20:50:17 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:50:17 INFO  DriverFactory:128 - Running the TCs in null
+2024-03-07 20:50:17 INFO  DriverFactory:132 - No environment is passed, so running the TCs in QA Environment
+2024-03-07 20:50:17 INFO  DriverFactory:41 - The browser name is : chrome
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started FeaturedProductsDisplayedTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - FeaturedProductsDisplayedTest started!
+2024-03-07 20:50:23 INFO  Landingpage:174 - Featured Products are displayed in the page. 
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - FeaturedProductsDisplayedTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - FeaturedProductsDisplayedTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started ShoppingCartDisplayedTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - ShoppingCartDisplayedTest started!
+2024-03-07 20:50:23 INFO  Landingpage:122 - shoppingCart Link exists in the page. 
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - ShoppingCartDisplayedTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - ShoppingCartDisplayedTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started checkOutDisplayedTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - checkOutDisplayedTest started!
+2024-03-07 20:50:23 INFO  Landingpage:132 - checkout Link exists in the page. 
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - checkOutDisplayedTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - checkOutDisplayedTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started currencyDropDownMenuDisplayedTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - currencyDropDownMenuDisplayedTest started!
+2024-03-07 20:50:23 INFO  Landingpage:59 - Currency Dropdown Menu exists in the page. 
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - currencyDropDownMenuDisplayedTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - currencyDropDownMenuDisplayedTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started currencyDropDownMenuItemsTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - currencyDropDownMenuItemsTest started!
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - currencyDropDownMenuItemsTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - currencyDropDownMenuItemsTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started headerDisplayedTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - headerDisplayedTest started!
+2024-03-07 20:50:23 INFO  Landingpage:152 - Header Menu Items are displayed in the page. 
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - headerDisplayedTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - headerDisplayedTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started landingPageTitleTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - landingPageTitleTest started!
+2024-03-07 20:50:23 INFO  Landingpage:45 - Landing Page Title is :Your Store
+2024-03-07 20:50:23 INFO  LandingPageTest:26 - The actual Landing Page Title is : Your Store
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - landingPageTitleTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - landingPageTitleTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started landingPageUrlTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - landingPageUrlTest started!
+2024-03-07 20:50:23 INFO  Landingpage:51 - Landing Page URL is :https://naveenautomationlabs.com/opencart/index.php?route=common/home
+2024-03-07 20:50:23 INFO  LandingPageTest:33 - The actual Landing Page URL is : https://naveenautomationlabs.com/opencart/index.php?route=common/home
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - landingPageUrlTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - landingPageUrlTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started logoDisplayedTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - logoDisplayedTest started!
+2024-03-07 20:50:23 INFO  Landingpage:142 - logo exists in the page. 
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - logoDisplayedTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - logoDisplayedTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started myAccountLinkDisplayedTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - myAccountLinkDisplayedTest started!
+2024-03-07 20:50:23 INFO  Landingpage:90 - MyAccount Link exists in the page. 
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - myAccountLinkDisplayedTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - myAccountLinkDisplayedTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started phoneNumberDisplayedTest
+2024-03-07 20:50:23 INFO  ExtentReportListener:65 - phoneNumberDisplayedTest started!
+2024-03-07 20:50:23 INFO  Landingpage:80 - contactNumber exists in the page. 
+2024-03-07 20:50:23 INFO  AllureReportListener:59 - phoneNumberDisplayedTest succeed
+2024-03-07 20:50:23 INFO  ExtentReportListener:96 - phoneNumberDisplayedTest passed!
+2024-03-07 20:50:23 INFO  AllureReportListener:54 - Execution started verifyFeaturedProductsCountTest
+2024-03-07 20:50:24 INFO  ExtentReportListener:65 - verifyFeaturedProductsCountTest started!
+2024-03-07 20:50:24 INFO  Landingpage:183 - Number of Featured Products displayed are : 4
+2024-03-07 20:50:24 INFO  AllureReportListener:59 - verifyFeaturedProductsCountTest succeed
+2024-03-07 20:50:24 INFO  ExtentReportListener:96 - verifyFeaturedProductsCountTest passed!
+2024-03-07 20:50:24 INFO  AllureReportListener:54 - Execution started verifyFooterMenuItemsCount
+2024-03-07 20:50:24 INFO  ExtentReportListener:65 - verifyFooterMenuItemsCount started!
+2024-03-07 20:50:24 INFO  Landingpage:189 - Number of Footer Menu Items are : 15
+2024-03-07 20:50:24 INFO  AllureReportListener:59 - verifyFooterMenuItemsCount succeed
+2024-03-07 20:50:24 INFO  ExtentReportListener:96 - verifyFooterMenuItemsCount passed!
+2024-03-07 20:50:24 INFO  AllureReportListener:54 - Execution started verifyFooterTextTest
+2024-03-07 20:50:24 INFO  ExtentReportListener:65 - verifyFooterTextTest started!
+2024-03-07 20:50:24 INFO  AllureReportListener:59 - verifyFooterTextTest succeed
+2024-03-07 20:50:24 INFO  ExtentReportListener:96 - verifyFooterTextTest passed!
+2024-03-07 20:50:24 INFO  AllureReportListener:54 - Execution started verifyHeaderMenuItemsTest
+2024-03-07 20:50:24 INFO  ExtentReportListener:65 - verifyHeaderMenuItemsTest started!
+2024-03-07 20:50:24 INFO  Landingpage:167 - [Desktops, Laptops & Notebooks, Components, Tablets, Software, Phones & PDAs, Cameras, MP3 Players]
+2024-03-07 20:50:24 INFO  AllureReportListener:59 - verifyHeaderMenuItemsTest succeed
+2024-03-07 20:50:24 INFO  ExtentReportListener:96 - verifyHeaderMenuItemsTest passed!
+2024-03-07 20:50:24 INFO  AllureReportListener:54 - Execution started verifyMyAccountLinkMenuItemsTest
+2024-03-07 20:50:24 INFO  ExtentReportListener:65 - verifyMyAccountLinkMenuItemsTest started!
+2024-03-07 20:50:24 INFO  Landingpage:105 - [Register, Login]
+2024-03-07 20:50:24 INFO  AllureReportListener:59 - verifyMyAccountLinkMenuItemsTest succeed
+2024-03-07 20:50:24 INFO  ExtentReportListener:96 - verifyMyAccountLinkMenuItemsTest passed!
+2024-03-07 20:50:24 INFO  AllureReportListener:54 - Execution started wishListDisplayedTest
+2024-03-07 20:50:24 INFO  ExtentReportListener:65 - wishListDisplayedTest started!
+2024-03-07 20:50:24 INFO  Landingpage:112 - wishList Link exists in the page. 
+2024-03-07 20:50:24 INFO  AllureReportListener:59 - wishListDisplayedTest succeed
+2024-03-07 20:50:24 INFO  ExtentReportListener:96 - wishListDisplayedTest passed!
+2024-03-07 20:50:24 INFO  AllureReportListener:49 - Execution finished Landing Page Test_firefox
+2024-03-07 20:50:24 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:50:24 INFO  AllureReportListener:44 - Execution started Login Page Test_firefox
+2024-03-07 20:50:24 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:50:24 INFO  DriverFactory:128 - Running the TCs in null
+2024-03-07 20:50:24 INFO  DriverFactory:132 - No environment is passed, so running the TCs in QA Environment
+2024-03-07 20:50:24 INFO  DriverFactory:41 - The browser name is : chrome
+2024-03-07 20:50:28 INFO  AllureReportListener:54 - Execution started loginPageTitleTest
+2024-03-07 20:50:28 INFO  ExtentReportListener:65 - loginPageTitleTest started!
+2024-03-07 20:50:28 INFO  Loginpage:35 - Login Page Title is :Account Login
+2024-03-07 20:50:28 INFO  LoginPageTest:26 - The actual Login Page Title is : Account Login
+2024-03-07 20:50:28 INFO  AllureReportListener:59 - loginPageTitleTest succeed
+2024-03-07 20:50:28 INFO  ExtentReportListener:96 - loginPageTitleTest passed!
+2024-03-07 20:50:28 INFO  AllureReportListener:54 - Execution started loginPageUrlTest
+2024-03-07 20:50:28 INFO  ExtentReportListener:65 - loginPageUrlTest started!
+2024-03-07 20:50:28 INFO  Loginpage:41 - Login Page URL is :https://naveenautomationlabs.com/opencart/index.php?route=account/login
+2024-03-07 20:50:28 INFO  LoginPageTest:33 - The actual Login Page URL is : https://naveenautomationlabs.com/opencart/index.php?route=account/login
+2024-03-07 20:50:28 INFO  AllureReportListener:59 - loginPageUrlTest succeed
+2024-03-07 20:50:28 INFO  ExtentReportListener:96 - loginPageUrlTest passed!
+2024-03-07 20:50:28 INFO  AllureReportListener:54 - Execution started loginPageTextDisplayedTest
+2024-03-07 20:50:28 INFO  ExtentReportListener:65 - loginPageTextDisplayedTest started!
+2024-03-07 20:50:28 INFO  AllureReportListener:59 - loginPageTextDisplayedTest succeed
+2024-03-07 20:50:28 INFO  ExtentReportListener:96 - loginPageTextDisplayedTest passed!
+2024-03-07 20:50:28 INFO  AllureReportListener:54 - Execution started loginPageForgotPasswordExistsTest
+2024-03-07 20:50:28 INFO  ExtentReportListener:65 - loginPageForgotPasswordExistsTest started!
+2024-03-07 20:50:28 INFO  Loginpage:48 - Forgot Password Link exists in the page. 
+2024-03-07 20:50:28 INFO  AllureReportListener:59 - loginPageForgotPasswordExistsTest succeed
+2024-03-07 20:50:28 INFO  ExtentReportListener:96 - loginPageForgotPasswordExistsTest passed!
+2024-03-07 20:50:28 INFO  AllureReportListener:54 - Execution started verifyloginTest
+2024-03-07 20:50:28 INFO  ExtentReportListener:65 - verifyloginTest started!
+2024-03-07 20:50:30 INFO  Accountpage:123 - Logout Link is displayed in the page. 
+2024-03-07 20:50:30 INFO  AllureReportListener:59 - verifyloginTest succeed
+2024-03-07 20:50:30 INFO  ExtentReportListener:96 - verifyloginTest passed!
+2024-03-07 20:50:30 INFO  AllureReportListener:49 - Execution finished Login Page Test_firefox
+2024-03-07 20:50:30 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:50:30 INFO  AllureReportListener:44 - Execution started Register Page Test
+2024-03-07 20:50:30 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:50:30 INFO  AllureReportListener:76 - ExecutionregisterPageTitleTest skipped
+2024-03-07 20:50:30 INFO  ExtentReportListener:111 - registerPageTitleTest skipped!
+2024-03-07 20:50:30 INFO  AllureReportListener:64 - registerPageTitleTest failed
+2024-03-07 20:50:30 INFO  AllureReportListener:67 - Screenshot captured for test case:registerPageTitleTest
+2024-03-07 20:50:30 INFO  AllureReportListener:49 - Execution finished Register Page Test
+2024-03-07 20:50:30 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:53:30 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:53:30 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:53:30 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:53:30 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:53:30 INFO  AllureReportListener:44 - Execution started Account Page Test
+2024-03-07 20:53:30 INFO  AllureReportListener:44 - Execution started Login Page Test_firefox
+2024-03-07 20:53:30 INFO  AllureReportListener:44 - Execution started ProductDetails Page Test
+2024-03-07 20:53:30 INFO  AllureReportListener:44 - Execution started Landing Page Test_firefox
+2024-03-07 20:53:30 INFO  DriverFactory:128 - Running the TCs in null
+2024-03-07 20:53:30 INFO  DriverFactory:128 - Running the TCs in null
+2024-03-07 20:53:30 INFO  DriverFactory:128 - Running the TCs in null
+2024-03-07 20:53:30 INFO  DriverFactory:128 - Running the TCs in null
+2024-03-07 20:53:30 INFO  DriverFactory:132 - No environment is passed, so running the TCs in QA Environment
+2024-03-07 20:53:30 INFO  DriverFactory:132 - No environment is passed, so running the TCs in QA Environment
+2024-03-07 20:53:30 INFO  DriverFactory:132 - No environment is passed, so running the TCs in QA Environment
+2024-03-07 20:53:30 INFO  DriverFactory:132 - No environment is passed, so running the TCs in QA Environment
+2024-03-07 20:53:30 INFO  DriverFactory:41 - The browser name is : chrome
+2024-03-07 20:53:30 INFO  DriverFactory:41 - The browser name is : chrome
+2024-03-07 20:53:30 INFO  DriverFactory:41 - The browser name is : chrome
+2024-03-07 20:53:30 INFO  DriverFactory:41 - The browser name is : chrome
+2024-03-07 20:53:46 INFO  ExtentReportListener:65 - loginPageTitleTest started!
+2024-03-07 20:53:47 INFO  AllureReportListener:54 - Execution started loginPageTitleTest
+2024-03-07 20:53:47 INFO  Loginpage:35 - Login Page Title is :Account Login
+2024-03-07 20:53:47 INFO  LoginPageTest:26 - The actual Login Page Title is : Account Login
+2024-03-07 20:53:47 INFO  ExtentReportListener:96 - loginPageTitleTest passed!
+2024-03-07 20:53:48 INFO  ExtentReportListener:65 - FeaturedProductsDisplayedTest started!
+2024-03-07 20:53:48 INFO  AllureReportListener:54 - Execution started FeaturedProductsDisplayedTest
+2024-03-07 20:53:49 INFO  AllureReportListener:59 - loginPageTitleTest succeed
+2024-03-07 20:53:49 INFO  ExtentReportListener:65 - loginPageUrlTest started!
+2024-03-07 20:53:49 INFO  AllureReportListener:54 - Execution started loginPageUrlTest
+2024-03-07 20:53:49 INFO  Landingpage:174 - Featured Products are displayed in the page. 
+2024-03-07 20:53:49 INFO  ExtentReportListener:96 - FeaturedProductsDisplayedTest passed!
+2024-03-07 20:53:49 INFO  Loginpage:41 - Login Page URL is :https://naveenautomationlabs.com/opencart/index.php?route=account/login
+2024-03-07 20:53:49 INFO  LoginPageTest:33 - The actual Login Page URL is : https://naveenautomationlabs.com/opencart/index.php?route=account/login
+2024-03-07 20:53:49 INFO  ExtentReportListener:96 - loginPageUrlTest passed!
+2024-03-07 20:53:49 INFO  AllureReportListener:59 - FeaturedProductsDisplayedTest succeed
+2024-03-07 20:53:49 INFO  ExtentReportListener:65 - ShoppingCartDisplayedTest started!
+2024-03-07 20:53:49 INFO  AllureReportListener:59 - loginPageUrlTest succeed
+2024-03-07 20:53:49 INFO  ExtentReportListener:65 - loginPageTextDisplayedTest started!
+2024-03-07 20:53:49 INFO  AllureReportListener:54 - Execution started ShoppingCartDisplayedTest
+2024-03-07 20:53:49 INFO  AllureReportListener:54 - Execution started loginPageTextDisplayedTest
+2024-03-07 20:53:49 INFO  Landingpage:122 - shoppingCart Link exists in the page. 
+2024-03-07 20:53:49 INFO  ExtentReportListener:96 - ShoppingCartDisplayedTest passed!
+2024-03-07 20:53:49 INFO  AllureReportListener:59 - ShoppingCartDisplayedTest succeed
+2024-03-07 20:53:49 INFO  ExtentReportListener:65 - checkOutDisplayedTest started!
+2024-03-07 20:53:49 INFO  AllureReportListener:54 - Execution started checkOutDisplayedTest
+2024-03-07 20:53:49 INFO  ExtentReportListener:96 - loginPageTextDisplayedTest passed!
+2024-03-07 20:53:49 INFO  AllureReportListener:59 - loginPageTextDisplayedTest succeed
+2024-03-07 20:53:49 INFO  ExtentReportListener:65 - loginPageForgotPasswordExistsTest started!
+2024-03-07 20:53:49 INFO  AllureReportListener:54 - Execution started loginPageForgotPasswordExistsTest
+2024-03-07 20:53:49 INFO  Landingpage:132 - checkout Link exists in the page. 
+2024-03-07 20:53:49 INFO  ExtentReportListener:96 - checkOutDisplayedTest passed!
+2024-03-07 20:53:49 INFO  AllureReportListener:59 - checkOutDisplayedTest succeed
+2024-03-07 20:53:49 INFO  ExtentReportListener:65 - currencyDropDownMenuDisplayedTest started!
+2024-03-07 20:53:49 INFO  AllureReportListener:54 - Execution started currencyDropDownMenuDisplayedTest
+2024-03-07 20:53:49 INFO  Landingpage:59 - Currency Dropdown Menu exists in the page. 
+2024-03-07 20:53:49 INFO  Loginpage:48 - Forgot Password Link exists in the page. 
+2024-03-07 20:53:49 INFO  ExtentReportListener:96 - currencyDropDownMenuDisplayedTest passed!
+2024-03-07 20:53:49 INFO  ExtentReportListener:96 - loginPageForgotPasswordExistsTest passed!
+2024-03-07 20:53:49 INFO  AllureReportListener:59 - currencyDropDownMenuDisplayedTest succeed
+2024-03-07 20:53:49 INFO  ExtentReportListener:65 - currencyDropDownMenuItemsTest started!
+2024-03-07 20:53:49 INFO  AllureReportListener:59 - loginPageForgotPasswordExistsTest succeed
+2024-03-07 20:53:49 INFO  AllureReportListener:54 - Execution started currencyDropDownMenuItemsTest
+2024-03-07 20:53:49 INFO  ExtentReportListener:65 - verifyloginTest started!
+2024-03-07 20:53:49 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:53:49 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:53:49 INFO  AllureReportListener:54 - Execution started verifyloginTest
+2024-03-07 20:53:50 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:53:50 INFO  ExtentReportListener:65 - LogoutLinkDisplayedTest started!
+2024-03-07 20:53:50 INFO  AllureReportListener:54 - Execution started LogoutLinkDisplayedTest
+2024-03-07 20:53:50 INFO  Accountpage:123 - Logout Link is displayed in the page. 
+2024-03-07 20:53:50 INFO  ExtentReportListener:96 - LogoutLinkDisplayedTest passed!
+2024-03-07 20:53:50 INFO  AllureReportListener:59 - LogoutLinkDisplayedTest succeed
+2024-03-07 20:53:50 INFO  ExtentReportListener:65 - MyAccountsHeadingDisplayedTest started!
+2024-03-07 20:53:50 INFO  AllureReportListener:54 - Execution started MyAccountsHeadingDisplayedTest
+2024-03-07 20:53:50 INFO  Accountpage:52 - My Account Heading is displayed in the page. 
+2024-03-07 20:53:50 INFO  ExtentReportListener:96 - MyAccountsHeadingDisplayedTest passed!
+2024-03-07 20:53:50 INFO  AllureReportListener:59 - MyAccountsHeadingDisplayedTest succeed
+2024-03-07 20:53:50 INFO  ExtentReportListener:65 - MyAffiliateAccountHeadingDisplayedTest started!
+2024-03-07 20:53:50 INFO  AllureReportListener:54 - Execution started MyAffiliateAccountHeadingDisplayedTest
+2024-03-07 20:53:51 INFO  Accountpage:74 - My Affiliate Account Heading is displayed in the page. 
+2024-03-07 20:53:51 INFO  ExtentReportListener:96 - MyAffiliateAccountHeadingDisplayedTest passed!
+2024-03-07 20:53:51 INFO  AllureReportListener:59 - MyAffiliateAccountHeadingDisplayedTest succeed
+2024-03-07 20:53:51 INFO  ExtentReportListener:65 - NewsLetterHeadingDisplayedTest started!
+2024-03-07 20:53:51 INFO  AllureReportListener:54 - Execution started NewsLetterHeadingDisplayedTest
+2024-03-07 20:53:51 INFO  Accountpage:85 - NewsLetter Heading is displayed in the page. 
+2024-03-07 20:53:51 INFO  ExtentReportListener:96 - NewsLetterHeadingDisplayedTest passed!
+2024-03-07 20:53:51 INFO  ExtentReportListener:96 - currencyDropDownMenuItemsTest passed!
+2024-03-07 20:53:51 INFO  AllureReportListener:59 - NewsLetterHeadingDisplayedTest succeed
+2024-03-07 20:53:51 INFO  AllureReportListener:59 - currencyDropDownMenuItemsTest succeed
+2024-03-07 20:53:51 INFO  ExtentReportListener:65 - OrdersHeadingDisplayedTest started!
+2024-03-07 20:53:51 INFO  ExtentReportListener:65 - headerDisplayedTest started!
+2024-03-07 20:53:51 INFO  AllureReportListener:54 - Execution started OrdersHeadingDisplayedTest
+2024-03-07 20:53:51 INFO  AllureReportListener:54 - Execution started headerDisplayedTest
+2024-03-07 20:53:51 INFO  Landingpage:152 - Header Menu Items are displayed in the page. 
+2024-03-07 20:53:51 INFO  ExtentReportListener:96 - headerDisplayedTest passed!
+2024-03-07 20:53:51 INFO  AllureReportListener:59 - headerDisplayedTest succeed
+2024-03-07 20:53:51 INFO  ExtentReportListener:65 - landingPageTitleTest started!
+2024-03-07 20:53:51 INFO  AllureReportListener:54 - Execution started landingPageTitleTest
+2024-03-07 20:53:51 INFO  Accountpage:63 - Orders Heading is displayed in the page. 
+2024-03-07 20:53:51 INFO  ExtentReportListener:96 - OrdersHeadingDisplayedTest passed!
+2024-03-07 20:53:51 INFO  AllureReportListener:59 - OrdersHeadingDisplayedTest succeed
+2024-03-07 20:53:51 INFO  ExtentReportListener:65 - RightPanelDisplayedTest started!
+2024-03-07 20:53:51 INFO  AllureReportListener:54 - Execution started RightPanelDisplayedTest
+2024-03-07 20:53:51 INFO  Landingpage:45 - Landing Page Title is :Your Store
+2024-03-07 20:53:51 INFO  LandingPageTest:26 - The actual Landing Page Title is : Your Store
+2024-03-07 20:53:51 INFO  ExtentReportListener:96 - landingPageTitleTest passed!
+2024-03-07 20:53:51 INFO  AllureReportListener:59 - landingPageTitleTest succeed
+2024-03-07 20:53:51 INFO  ExtentReportListener:65 - landingPageUrlTest started!
+2024-03-07 20:53:51 INFO  AllureReportListener:54 - Execution started landingPageUrlTest
+2024-03-07 20:53:51 INFO  Accountpage:102 - Right Panel of Links is displayed in the page. 
+2024-03-07 20:53:51 INFO  ExtentReportListener:96 - RightPanelDisplayedTest passed!
+2024-03-07 20:53:51 INFO  AllureReportListener:59 - RightPanelDisplayedTest succeed
+2024-03-07 20:53:51 INFO  ExtentReportListener:65 - accountPageTitleTest started!
+2024-03-07 20:53:51 INFO  AllureReportListener:54 - Execution started accountPageTitleTest
+2024-03-07 20:53:52 INFO  Landingpage:51 - Landing Page URL is :https://naveenautomationlabs.com/opencart/index.php?route=common/home
+2024-03-07 20:53:52 INFO  LandingPageTest:33 - The actual Landing Page URL is : https://naveenautomationlabs.com/opencart/index.php?route=common/home
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - landingPageUrlTest passed!
+2024-03-07 20:53:52 INFO  Accountpage:39 - Account Page Title is :My Account
+2024-03-07 20:53:52 INFO  AccountPageTest:28 - The actual Account Page Title is : My Account
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - landingPageUrlTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - accountPageTitleTest passed!
+2024-03-07 20:53:52 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 3
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - logoDisplayedTest started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started logoDisplayedTest
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - accountPageTitleTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - accountPageUrlTest started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started accountPageUrlTest
+2024-03-07 20:53:52 INFO  Accountpage:45 - Account Page URL is :https://naveenautomationlabs.com/opencart/index.php?route=account/account
+2024-03-07 20:53:52 INFO  AccountPageTest:35 - The actual Account Page URL is : https://naveenautomationlabs.com/opencart/index.php?route=account/account
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - accountPageUrlTest passed!
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - accountPageUrlTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - searchBarDisplayedTest started!
+2024-03-07 20:53:52 INFO  Landingpage:142 - logo exists in the page. 
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started searchBarDisplayedTest
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - logoDisplayedTest passed!
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - logoDisplayedTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - myAccountLinkDisplayedTest started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started myAccountLinkDisplayedTest
+2024-03-07 20:53:52 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - searchBarDisplayedTest passed!
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - searchBarDisplayedTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - verifyHeadersCountTest started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started verifyHeadersCountTest
+2024-03-07 20:53:52 INFO  Landingpage:90 - MyAccount Link exists in the page. 
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - myAccountLinkDisplayedTest passed!
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - myAccountLinkDisplayedTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - phoneNumberDisplayedTest started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started phoneNumberDisplayedTest
+2024-03-07 20:53:52 INFO  Accountpage:95 - Count of HeadersList in Accounts page: 4
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - verifyHeadersCountTest passed!
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - verifyHeadersCountTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - searchProductCountTest started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started searchProductCountTest
+2024-03-07 20:53:52 INFO  Landingpage:80 - contactNumber exists in the page. 
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - phoneNumberDisplayedTest passed!
+2024-03-07 20:53:52 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - phoneNumberDisplayedTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - verifyFeaturedProductsCountTest started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started verifyFeaturedProductsCountTest
+2024-03-07 20:53:52 INFO  Landingpage:183 - Number of Featured Products displayed are : 4
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - verifyFeaturedProductsCountTest passed!
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - verifyFeaturedProductsCountTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - verifyFooterMenuItemsCount started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started verifyFooterMenuItemsCount
+2024-03-07 20:53:52 INFO  Landingpage:189 - Number of Footer Menu Items are : 15
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - verifyFooterMenuItemsCount passed!
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - verifyFooterMenuItemsCount succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - verifyFooterTextTest started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started verifyFooterTextTest
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - verifyFooterTextTest passed!
+2024-03-07 20:53:52 INFO  AllureReportListener:59 - verifyFooterTextTest succeed
+2024-03-07 20:53:52 INFO  ExtentReportListener:65 - verifyHeaderMenuItemsTest started!
+2024-03-07 20:53:52 INFO  AllureReportListener:54 - Execution started verifyHeaderMenuItemsTest
+2024-03-07 20:53:52 INFO  Accountpage:123 - Logout Link is displayed in the page. 
+2024-03-07 20:53:52 INFO  ExtentReportListener:96 - verifyloginTest passed!
+2024-03-07 20:53:53 INFO  AllureReportListener:59 - verifyloginTest succeed
+2024-03-07 20:53:53 INFO  Landingpage:167 - [Desktops, Laptops & Notebooks, Components, Tablets, Software, Phones & PDAs, Cameras, MP3 Players]
+2024-03-07 20:53:53 INFO  ExtentReportListener:96 - verifyHeaderMenuItemsTest passed!
+2024-03-07 20:53:53 INFO  AllureReportListener:59 - verifyHeaderMenuItemsTest succeed
+2024-03-07 20:53:53 INFO  ExtentReportListener:65 - verifyMyAccountLinkMenuItemsTest started!
+2024-03-07 20:53:53 INFO  AllureReportListener:54 - Execution started verifyMyAccountLinkMenuItemsTest
+2024-03-07 20:53:53 INFO  Landingpage:105 - [Register, Login]
+2024-03-07 20:53:53 INFO  ExtentReportListener:96 - verifyMyAccountLinkMenuItemsTest passed!
+2024-03-07 20:53:53 INFO  AllureReportListener:59 - verifyMyAccountLinkMenuItemsTest succeed
+2024-03-07 20:53:53 INFO  ExtentReportListener:65 - wishListDisplayedTest started!
+2024-03-07 20:53:53 INFO  AllureReportListener:54 - Execution started wishListDisplayedTest
+2024-03-07 20:53:53 INFO  Landingpage:112 - wishList Link exists in the page. 
+2024-03-07 20:53:53 INFO  ExtentReportListener:96 - wishListDisplayedTest passed!
+2024-03-07 20:53:53 INFO  AllureReportListener:59 - wishListDisplayedTest succeed
+2024-03-07 20:53:54 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 3
+2024-03-07 20:53:54 INFO  ExtentReportListener:96 - searchProductCountTest passed!
+2024-03-07 20:53:54 INFO  AllureReportListener:59 - searchProductCountTest succeed
+2024-03-07 20:53:54 INFO  ExtentReportListener:65 - searchProductCountTest started!
+2024-03-07 20:53:54 INFO  AllureReportListener:54 - Execution started searchProductCountTest
+2024-03-07 20:53:54 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:53:54 INFO  ProductDetailspage:52 - Product Header is: MacBook Pro
+2024-03-07 20:53:54 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:53:55 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 2
+2024-03-07 20:53:55 INFO  ExtentReportListener:96 - searchProductCountTest passed!
+2024-03-07 20:53:55 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:53:55 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:53:55 INFO  AllureReportListener:59 - searchProductCountTest succeed
+2024-03-07 20:53:55 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:53:55 INFO  AllureReportListener:49 - Execution finished Login Page Test_firefox
+2024-03-07 20:53:55 INFO  ExtentReportListener:82 - Test Suite started!
+2024-03-07 20:53:55 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:53:55 INFO  AllureReportListener:44 - Execution started Register Page Test
+2024-03-07 20:53:55 INFO  DriverFactory:128 - Running the TCs in null
+2024-03-07 20:53:55 INFO  DriverFactory:132 - No environment is passed, so running the TCs in QA Environment
+2024-03-07 20:53:55 INFO  ExtentReportListener:65 - searchProductCountTest started!
+2024-03-07 20:53:55 INFO  DriverFactory:41 - The browser name is : chrome
+2024-03-07 20:53:55 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:53:55 INFO  AllureReportListener:49 - Execution finished Landing Page Test_firefox
+2024-03-07 20:53:55 INFO  AllureReportListener:54 - Execution started searchProductCountTest
+2024-03-07 20:53:55 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:53:55 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:53:56 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 2
+2024-03-07 20:53:56 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 1
+2024-03-07 20:53:56 INFO  ExtentReportListener:96 - searchProductCountTest passed!
+2024-03-07 20:53:56 INFO  AllureReportListener:59 - searchProductCountTest succeed
+2024-03-07 20:53:57 INFO  ExtentReportListener:65 - sortByDropDownListTest started!
+2024-03-07 20:53:57 INFO  AllureReportListener:54 - Execution started sortByDropDownListTest
+2024-03-07 20:53:58 INFO  ProductDetailspage:52 - Product Header is: Samsung Galaxy Tab 10.1
+2024-03-07 20:53:58 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:53:58 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:53:58 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:53:58 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:53:58 INFO  ProductSearchpage:48 - Number of products displayed in the Search is : 9
+2024-03-07 20:53:58 INFO  ExtentReportListener:96 - sortByDropDownListTest passed!
+2024-03-07 20:53:58 INFO  AllureReportListener:59 - sortByDropDownListTest succeed
+2024-03-07 20:53:58 INFO  ExtentReportListener:65 - showByDropDownListTest started!
+2024-03-07 20:53:58 INFO  AllureReportListener:54 - Execution started showByDropDownListTest
+2024-03-07 20:53:58 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:53:59 INFO  ProductSearchpage:56 - Number of products displayed in the Search is : 5
+2024-03-07 20:53:59 INFO  ExtentReportListener:96 - showByDropDownListTest passed!
+2024-03-07 20:53:59 INFO  AllureReportListener:59 - showByDropDownListTest succeed
+2024-03-07 20:53:59 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:53:59 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:53:59 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 1
+2024-03-07 20:53:59 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:54:01 INFO  ProductDetailspage:52 - Product Header is: Apple Cinema 30"
+2024-03-07 20:54:01 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:54:01 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:54:01 INFO  ExtentReportListener:65 - getProductDetailsTest started!
+2024-03-07 20:54:01 INFO  AllureReportListener:54 - Execution started getProductDetailsTest
+2024-03-07 20:54:01 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 3
+2024-03-07 20:54:01 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:54:02 INFO  ProductDetailspage:52 - Product Header is: MacBook Pro
+2024-03-07 20:54:02 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:54:02 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:54:02 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:54:02 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:54:03 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:54:03 INFO  ExtentReportListener:65 - registerPageTitleTest started!
+2024-03-07 20:54:03 INFO  AllureReportListener:54 - Execution started registerPageTitleTest
+2024-03-07 20:54:03 INFO  Registerpage:44 - Register Page Title is :Register Account
+2024-03-07 20:54:03 INFO  RegisterPageTest:26 - The actual Register Page Title is : Register Account
+2024-03-07 20:54:03 INFO  ExtentReportListener:96 - registerPageTitleTest passed!
+2024-03-07 20:54:03 INFO  AllureReportListener:59 - registerPageTitleTest succeed
+2024-03-07 20:54:03 INFO  ExtentReportListener:65 - registerPageUrlTest started!
+2024-03-07 20:54:03 INFO  AllureReportListener:54 - Execution started registerPageUrlTest
+2024-03-07 20:54:03 INFO  Registerpage:50 - Register Page URL is :https://naveenautomationlabs.com/opencart/index.php?route=account/register
+2024-03-07 20:54:03 INFO  RegisterPageTest:33 - The actual Register Page URL is : https://naveenautomationlabs.com/opencart/index.php?route=account/register
+2024-03-07 20:54:03 INFO  ExtentReportListener:96 - registerPageUrlTest passed!
+2024-03-07 20:54:03 INFO  AllureReportListener:59 - registerPageUrlTest succeed
+2024-03-07 20:54:03 INFO  ProductDetailspage:52 - Product Header is: MacBook Pro
+2024-03-07 20:54:03 INFO  ExtentReportListener:65 - registerPageTextIsDisplayedTest started!
+2024-03-07 20:54:03 INFO  AllureReportListener:54 - Execution started registerPageTextIsDisplayedTest
+2024-03-07 20:54:04 INFO  ExtentReportListener:96 - registerPageTextIsDisplayedTest passed!
+2024-03-07 20:54:04 INFO  AllureReportListener:59 - registerPageTextIsDisplayedTest succeed
+2024-03-07 20:54:04 INFO  ExtentReportListener:65 - loginLinkDisplayedTest started!
+2024-03-07 20:54:04 INFO  AllureReportListener:54 - Execution started loginLinkDisplayedTest
+2024-03-07 20:54:04 INFO  ExtentReportListener:96 - loginLinkDisplayedTest passed!
+2024-03-07 20:54:04 INFO  AllureReportListener:59 - loginLinkDisplayedTest succeed
+2024-03-07 20:54:04 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 2
+2024-03-07 20:54:04 INFO  ExtentReportListener:96 - getProductDetailsTest passed!
+2024-03-07 20:54:04 INFO  AllureReportListener:59 - getProductDetailsTest succeed
+2024-03-07 20:54:04 INFO  ExtentReportListener:65 - isDescriptionAndReviewsDisplayed started!
+2024-03-07 20:54:04 INFO  AllureReportListener:54 - Execution started isDescriptionAndReviewsDisplayed
+2024-03-07 20:54:05 INFO  ExtentReportListener:96 - isDescriptionAndReviewsDisplayed passed!
+2024-03-07 20:54:05 INFO  AllureReportListener:59 - isDescriptionAndReviewsDisplayed succeed
+2024-03-07 20:54:05 INFO  ExtentReportListener:65 - productAddToCartTest started!
+2024-03-07 20:54:05 INFO  AllureReportListener:54 - Execution started productAddToCartTest
+2024-03-07 20:54:05 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:54:06 INFO  ProductDetailspage:52 - Product Header is: Samsung Galaxy Tab 10.1
+2024-03-07 20:54:06 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:54:06 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:54:06 INFO  ExtentReportListener:65 - searchProductTest started!
+2024-03-07 20:54:06 INFO  AllureReportListener:54 - Execution started searchProductTest
+2024-03-07 20:54:06 INFO  Accountpage:113 - Search exists in the page. 
+2024-03-07 20:54:06 DEBUG PackageRelationshipCollection:309 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-03-07 20:54:06 DEBUG PackageRelationshipCollection:309 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-03-07 20:54:07 DEBUG PackageRelationshipCollection:309 - Parsing relationship: /_rels/.rels
+2024-03-07 20:54:07 INFO  ProductSearchpage:40 - Number of products displayed in the Search is : 1
+2024-03-07 20:54:08 INFO  ProductDetailspage:110 - Product Quantity is: 1
+2024-03-07 20:54:09 INFO  ProductDetailspage:52 - Product Header is: Apple Cinema 30"
+2024-03-07 20:54:09 INFO  ExtentReportListener:96 - searchProductTest passed!
+2024-03-07 20:54:09 INFO  AllureReportListener:59 - searchProductTest succeed
+2024-03-07 20:54:10 INFO  ProductDetailspage:122 - Cart Success Message is : Success: You have added MacBook Pro to your shopping cart!
+2024-03-07 20:54:10 INFO  ExtentReportListener:96 - productAddToCartTest passed!
+2024-03-07 20:54:10 INFO  AllureReportListener:59 - productAddToCartTest succeed
+2024-03-07 20:54:10 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:54:10 INFO  AllureReportListener:49 - Execution finished Account Page Test
+2024-03-07 20:54:10 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:54:11 INFO  AllureReportListener:49 - Execution finished ProductDetails Page Test
+2024-03-07 20:54:11 INFO  ExtentReportListener:65 - registerUserTest started!
+2024-03-07 20:54:11 INFO  AllureReportListener:54 - Execution started registerUserTest
+2024-03-07 20:54:13 INFO  Registerpage:82 - User received User Registration Success Message : Your Account Has Been Created!
+2024-03-07 20:54:14 INFO  ExtentReportListener:96 - registerUserTest passed!
+2024-03-07 20:54:14 INFO  AllureReportListener:59 - registerUserTest succeed
+2024-03-07 20:54:14 INFO  ExtentReportListener:65 - registerUserTest started!
+2024-03-07 20:54:14 INFO  AllureReportListener:54 - Execution started registerUserTest
+2024-03-07 20:54:16 INFO  Registerpage:82 - User received User Registration Success Message : Your Account Has Been Created!
+2024-03-07 20:54:18 INFO  ExtentReportListener:96 - registerUserTest passed!
+2024-03-07 20:54:18 INFO  AllureReportListener:59 - registerUserTest succeed
+2024-03-07 20:54:18 INFO  ExtentReportListener:65 - registerUserTest started!
+2024-03-07 20:54:18 INFO  AllureReportListener:54 - Execution started registerUserTest
+2024-03-07 20:54:19 INFO  Registerpage:82 - User received User Registration Success Message : Your Account Has Been Created!
+2024-03-07 20:54:21 INFO  ExtentReportListener:96 - registerUserTest passed!
+2024-03-07 20:54:21 INFO  AllureReportListener:59 - registerUserTest succeed
+2024-03-07 20:54:21 INFO  ExtentReportListener:88 - Test Suite is ending!
+2024-03-07 20:54:21 INFO  AllureReportListener:49 - Execution finished Register Page Test

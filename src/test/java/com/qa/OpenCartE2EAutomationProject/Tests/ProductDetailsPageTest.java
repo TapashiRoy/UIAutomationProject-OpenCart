@@ -3,6 +3,8 @@ package com.qa.OpenCartE2EAutomationProject.Tests;
 import java.util.ArrayList;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -11,6 +13,8 @@ import org.testng.annotations.Test;
 import com.qa.OpenCartE2EAutomationProject.Base.BaseTest;
 
 public class ProductDetailsPageTest extends BaseTest {
+	
+	private static final Logger log = LogManager.getLogger(ProductDetailsPageTest.class);
 
 	@BeforeClass
 	public void accountPageSetup() {

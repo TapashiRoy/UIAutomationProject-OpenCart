@@ -1,5 +1,7 @@
 package com.qa.OpenCartE2EAutomationProject.Pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -9,6 +11,8 @@ import com.qa.OpenCartE2EAutomationProject.Utils.ElementUtil;
 public class Loginpage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	
+	private static final Logger log = LogManager.getLogger(Loginpage.class);
 
 	public Loginpage(WebDriver driver) {
 		this.driver=driver;
@@ -28,23 +32,23 @@ public class Loginpage {
 	//Page Action methods
 	public String getLoginPageTitle() {
 		String title = eleUtil.waitTitleIsAndFetch(AppConstants.LOGIN_PAGE_TITLE,AppConstants.DEFAULT_SHORT_TIME_OUT);
-		System.out.println("Login Page Title is :" + title);
+		log.info("Login Page Title is :" + title);
 		return title;
 	}
 
 	public String getLoginPageUrl() {
 		String url = eleUtil.waitURL(AppConstants.LOGIN_PAGE_URL, AppConstants.DEFAULT_SHORT_TIME_OUT);
-		System.out.println("Login Page URL is :" + url);
+		log.info("Login Page URL is :" + url);
 		return url;
 	}
 
 	public boolean isForgotPasswordLinkExists() {
 		boolean flag = eleUtil.dofindElement(forgotPwdLink, AppConstants.DEFAULT_SHORT_TIME_OUT).isDisplayed();
 		if(flag) {
-			System.out.println("Forgot Password Link exists in the page. ");
+			log.info("Forgot Password Link exists in the page. ");
 		}
 		else {
-			System.out.println("Forgot Password Link is missing in the page. ");
+			log.info("Forgot Password Link is missing in the page. ");
 		}
 		return flag;
 	}

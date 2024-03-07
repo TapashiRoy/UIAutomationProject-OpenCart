@@ -7,6 +7,8 @@ import java.nio.file.Paths;
 import java.util.Calendar;
 import java.util.Date;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -19,7 +21,8 @@ import com.qa.OpenCartE2EAutomationProject.DriverFactory.DriverFactory;
 
 public class ExtentReportListener extends DriverFactory implements ITestListener {
 
-
+	private static final Logger log = LogManager.getLogger(ExtentReportListener.class);
+	
 	private static final String OUTPUT_FOLDER = "./reports/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
 
@@ -59,7 +62,7 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
 		int mid = qualifiedName.substring(0, last).lastIndexOf(".");
 		String className = qualifiedName.substring(mid + 1, last);
 
-		System.out.println(methodName + " started!");
+		log.info(methodName + " started!");
 		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),
 				result.getMethod().getDescription());
 
@@ -76,13 +79,13 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
 
 	@Override
 	public synchronized void onStart(ITestContext context) {
-		System.out.println("Test Suite started!");
+		log.info("Test Suite started!");
 
 	}
 
 	@Override
 	public synchronized void onFinish(ITestContext context) {
-		System.out.println(("Test Suite is ending!"));
+		log.info(("Test Suite is ending!"));
 		extent.flush();
 		test.remove();
 
@@ -90,7 +93,7 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
 
 	@Override
 	public synchronized void onTestSuccess(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " passed!"));
+		log.info((result.getMethod().getMethodName() + " passed!"));
 		test.get().pass("Test passed");
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 
@@ -98,14 +101,14 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
 
 	@Override
 	public synchronized void onTestFailure(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " failed!"));
+		log.info((result.getMethod().getMethodName() + " failed!"));
 		test.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	@Override
 	public synchronized void onTestSkipped(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " skipped!"));
+		log.info((result.getMethod().getMethodName() + " skipped!"));
 		test.get().skip(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 
@@ -113,7 +116,7 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
 
 	@Override
 	public synchronized void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
+		log.info(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
 	}
 
 	private Date getTime(long millis) {

@@ -1,5 +1,7 @@
 package com.qa.OpenCartE2EAutomationProject.Tests;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,16 +17,20 @@ import io.qameta.allure.Story;
 @Epic("Login Page for OpenCart Project")
 @Story("US101 : Login Page Scenarios")
 public class LoginPageTest extends BaseTest {
-
+	
+	private static final Logger log = LogManager.getLogger(LoginPageTest.class);
+	
 	@Test(priority=1)
 	public void loginPageTitleTest() {
 		String actualTitle = loginPage.getLoginPageTitle();
+		log.info("The actual Login Page Title is : " +actualTitle);
 		Assert.assertEquals(actualTitle, AppConstants.LOGIN_PAGE_TITLE);
 	}
 
 	@Test(priority=2)
 	public void loginPageUrlTest() {
 		String actualUrl = loginPage.getLoginPageUrl();
+		log.info("The actual Login Page URL is : " + actualUrl);
 		Assert.assertTrue(actualUrl.contains(AppConstants.LOGIN_PAGE_URL));
 	}
 

@@ -1,5 +1,7 @@
 package com.qa.OpenCartE2EAutomationProject.Tests;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -11,6 +13,8 @@ import com.qa.OpenCartE2EAutomationProject.Constants.AppConstants;
 import io.qameta.allure.Step;
 
 public class AccountPageTest extends BaseTest{
+	
+	  private static final Logger log = LogManager.getLogger(AccountPageTest.class);
 
 	@BeforeClass
 	public void accountPageSetup() {
@@ -21,12 +25,14 @@ public class AccountPageTest extends BaseTest{
 	@Test
 	public void accountPageTitleTest() {
 		String actualTitle = accountPage.getAccountPageTitle();
+		log.info("The actual Account Page Title is : " +actualTitle);
 		Assert.assertEquals(actualTitle, AppConstants.ACCOUNT_PAGE_TITLE);
 	}
 
 	@Test
 	public void accountPageUrlTest() {
 		String actualUrl = accountPage.getAccountPageUrl();
+		log.info("The actual Account Page URL is : " + actualUrl);
 		Assert.assertTrue(actualUrl.contains(AppConstants.ACCOUNT_PAGE_URL));
 	}
 

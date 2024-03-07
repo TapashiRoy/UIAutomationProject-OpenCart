@@ -2,6 +2,8 @@ package com.qa.OpenCartE2EAutomationProject.Tests;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -10,6 +12,8 @@ import com.qa.OpenCartE2EAutomationProject.Base.BaseTest;
 import com.qa.OpenCartE2EAutomationProject.Constants.AppConstants;
 
 public class LandingPageTest extends BaseTest {
+	
+	private static final Logger log = LogManager.getLogger(LandingPageTest.class);
 
 	@BeforeClass
 	public void landingPageSetup() {
@@ -19,12 +23,14 @@ public class LandingPageTest extends BaseTest {
 	@Test
 	public void landingPageTitleTest() {
 		String actualTitle = landingPage.getLandingPageTitle();
+		log.info("The actual Landing Page Title is : " +actualTitle);
 		Assert.assertEquals(actualTitle, "Your Store");
 	}
 
 	@Test
 	public void landingPageUrlTest() {
 		String actualUrl = landingPage.getLandingPageUrl();
+		log.info("The actual Landing Page URL is : " + actualUrl);
 		Assert.assertTrue(actualUrl.contains("common/home"));
 	}
 

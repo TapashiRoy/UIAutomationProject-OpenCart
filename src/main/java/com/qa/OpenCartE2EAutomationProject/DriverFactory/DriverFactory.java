@@ -8,6 +8,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.aspectj.util.FileUtil;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -19,11 +21,14 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.qa.OpenCartE2EAutomationProject.Exceptions.FrameworkExceptions;
 
+
 public class DriverFactory {
 	public WebDriver driver;
 	public Properties prop;
 	public OptionsManager op;
 	FileInputStream ip;
+	
+	private static final Logger log = LogManager.getLogger(DriverFactory.class);
 
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
@@ -33,7 +38,7 @@ public class DriverFactory {
 	public WebDriver initDriver(Properties prop) {
 		op = new OptionsManager(prop);
 		String browserName = prop.getProperty("browser");
-		System.out.println("The browser name is : " + browserName);
+		log.info("The browser name is : " + browserName);
 
 		if (browserName.trim().equalsIgnoreCase("chrome")) {
 			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
@@ -70,7 +75,7 @@ public class DriverFactory {
 		}
 
 		else {
-			System.out.println("Please pass the correct Browser name");
+			log.info("Please pass the correct Browser name");
 		}
 
 		getThreadLocalDriver().manage().deleteAllCookies();
@@ -81,7 +86,7 @@ public class DriverFactory {
 
 	private void init_remoteDriver(String browserName) {
 
-		System.out.println("Running tests on Selenim GRID with browser: " + browserName);
+		log.info("Running tests on Selenim GRID with browser: " + browserName);
 
 		try {
 			switch (browserName) {
@@ -95,7 +100,7 @@ public class DriverFactory {
 				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), op.getFireFoxOptions()));
 				break;
 			default:
-				System.out.println("Wrong browser info....can not run on grid remote machine....");
+				log.info("Wrong browser info....can not run on grid remote machine....");
 				throw new FrameworkExceptions("NO REMOTE BROWSER AVAILABLE");
 			}
 
@@ -120,11 +125,11 @@ public class DriverFactory {
 	public Properties initProp() {
 		prop = new Properties();
 		String envName = System.getProperty("env");
-		System.out.println("Running the TCs in " + envName);
+		log.info("Running the TCs in " + envName);
 
 		try {
 			if (envName == null) {
-				System.out.println("No environment is passed, so running the TCs in QA Environment");
+				log.info("No environment is passed, so running the TCs in QA Environment");
 				ip = new FileInputStream("./src/test/resources/config/qa.config.properties");
 			} else {
 				switch (envName.trim()) {

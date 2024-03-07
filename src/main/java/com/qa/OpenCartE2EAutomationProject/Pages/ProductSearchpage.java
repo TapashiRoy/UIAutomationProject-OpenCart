@@ -2,6 +2,8 @@ package com.qa.OpenCartE2EAutomationProject.Pages;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +14,8 @@ import com.qa.OpenCartE2EAutomationProject.Utils.ElementUtil;
 public class ProductSearchpage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	
+	private static final Logger log = LogManager.getLogger(ProductSearchpage.class);
 
 	public ProductSearchpage(WebDriver driver) {
 		this.driver=driver;
@@ -33,7 +37,7 @@ public class ProductSearchpage {
 
 	public int getSearchedProductsCount() {
 		int count = eleUtil.waitPresenceOfAllElements(prodSearchItems, AppConstants.DEFAULT_SHORT_TIME_OUT).size();
-		System.out.println("Number of products displayed in the Search is : " + count);
+		log.info("Number of products displayed in the Search is : " + count);
 		return count;
 	}
 
@@ -41,7 +45,7 @@ public class ProductSearchpage {
 		eleUtil.ClickonAElementInADropDownlist(sortByDropdownListItems, "Price (Low > High)");
 		List<WebElement> elements = eleUtil.getDropDownOptions(sortByDropdownListItems);
 		int count = elements.size();
-		System.out.println("Number of products displayed in the Search is : " + count);
+		log.info("Number of products displayed in the Search is : " + count);
 		return count;
 	}
 
@@ -49,7 +53,7 @@ public class ProductSearchpage {
 		eleUtil.ClickonAElementInADropDownlist(showDropdownListItems, "25");
 		List<WebElement> elements = eleUtil.getDropDownOptions(showDropdownListItems);
 		int count = elements.size();
-		System.out.println("Number of products displayed in the Search is : " + count);
+		log.info("Number of products displayed in the Search is : " + count);
 		return count;
 	}
 

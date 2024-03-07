@@ -1,5 +1,7 @@
 package com.qa.OpenCartE2EAutomationProject.Pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -9,6 +11,8 @@ import com.qa.OpenCartE2EAutomationProject.Utils.ElementUtil;
 public class Registerpage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	
+	private static final Logger log = LogManager.getLogger(Registerpage.class);
 
 	public Registerpage(WebDriver driver) {
 		this.driver = driver;
@@ -37,13 +41,13 @@ public class Registerpage {
 	//Register Page Methods
 	public String getRegisterPageTitle() {
 		String title = eleUtil.waitTitleContainsAndFetch(AppConstants.REGISTER_PAGE_TITLE, AppConstants.DEFAULT_SHORT_TIME_OUT);
-		System.out.println("Register Page Title is :" + title);
+		log.info("Register Page Title is :" + title);
 		return title;
 	}
 
 	public String getRegisterPageUrl() {
 		String url = eleUtil.waitURL(AppConstants.REGISTER_PAGE_URL, AppConstants.DEFAULT_SHORT_TIME_OUT);
-		System.out.println("Register Page URL is :" + url);
+		log.info("Register Page URL is :" + url);
 		return url;
 	}
 
@@ -75,7 +79,7 @@ public class Registerpage {
 		eleUtil.doclick(continueButton);
 
 		String successMsg = eleUtil.waitForElementIsVisibleAndEnable(successMessage, AppConstants.DEFAULT_SHORT_TIME_OUT).getText();
-		System.out.println("User received User Registration Success Message : " + successMsg);
+		log.info("User received User Registration Success Message : " + successMsg);
 
 		if(successMsg.contains(AppConstants.CUSTOMER_REGISTRATION_SUCCESS_MSG)) {
 			eleUtil.doclick(logoutLink);

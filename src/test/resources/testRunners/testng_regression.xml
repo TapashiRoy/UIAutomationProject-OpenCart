@@ -38,11 +38,12 @@
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.LoginPageTest" />
 		</classes>
 	</test>
-	
-	
-<!--	<test name="Register Page Test">
+		
+	<test name="Register Page Test">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="browserversion" value="120"/>
 		<classes>
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.RegisterPageTest" />
 		</classes>
-	</test>-->
+	</test>
 </suite>
