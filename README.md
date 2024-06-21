@@ -66,7 +66,7 @@ E.g. mvn test -Dtest=TC004_Logout
 Navigate to the project directory using command line.
 Run the following command but replace <test_plan> with the file path of the test suite xml files.
 mvn test -DsuiteXmlFiles=<test_plan>
-E.g. mvn test -DsuiteXmlFiles=src/test/java/web_saucedemo/tests/testng/testplans/TP-002_Regression.xml
+
 
 
 
