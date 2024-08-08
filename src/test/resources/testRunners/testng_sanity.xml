@@ -9,6 +9,7 @@
 	
 	<test name="Login Page Test">
 		<parameter name="browser" value="chrome"/>
+		<parameter name="browserversion" value="120"/>
 		<classes>
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.LoginPageTest" />
 		</classes>
