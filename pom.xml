@@ -6,7 +6,7 @@
 	<artifactId>OpenCartE2EAutomationProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>OpenCartE2EAutomationProject</name>
-	<url>https://naveenautomationlabs.com/opencart/</url>
+	<url>https://naveenautomationlabs.com/opencart/</url>	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.17</maven.compiler.source>

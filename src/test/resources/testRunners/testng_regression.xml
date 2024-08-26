@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="OpenCart Regression Suite" verbose="2" thread-count="4" parallel="tests">
+<suite name="OpenCart Regression Suite" verbose="2" thread-count="5" parallel="tests">
 	
 	<listeners>		
 		<listener class-name="com.qa.OpenCartE2EAutomationProject.Listeners.ExtentReportListener" />	
@@ -24,16 +24,16 @@
 	</test>
 	
 	<test name="Landing Page Test_firefox">
-		<parameter name="browser" value="chrome"/>
-		<parameter name="browserversion" value="120"/>
+		<parameter name="browser" value="firefox"/>
+		<parameter name="browserversion" value="115"/>
 		<classes>
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.LandingPageTest" />
 		</classes>
 	</test>
 	
 	<test name="Login Page Test_firefox">
-		<parameter name="browser" value="chrome"/>
-		<parameter name="browserversion" value="120"/>
+		<parameter name="browser" value="firefox"/>
+		<parameter name="browserversion" value="115"/>
 		<classes>
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.LoginPageTest" />
 		</classes>

@@ -27,8 +27,8 @@ public class ElementUtil {
 		this.driver = driver;
 	}
 
-	public WebElement dofindElement(By locator) {
-		return driver.findElement(locator);
+	public WebElement dofindElement(By locator) {	
+		return driver.findElement(locator);		
 	}
 
 	public WebElement dofindElement(By locator, int timeout) {
@@ -234,7 +234,7 @@ public class ElementUtil {
 	public List<WebElement> waitVisibilityOfAllElements(By locator, int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
-	}
+	}	
 
 	public Alert waitForAlertPresence(int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
