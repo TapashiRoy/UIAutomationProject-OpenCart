@@ -7,41 +7,41 @@
 		<listener class-name="com.qa.OpenCartE2EAutomationProject.Listeners.AnnotationTransformer" />		
 	</listeners>
 	
-	<test name="Account Page Test">
+	<test name="Account Page Test_Chrome">
 		<parameter name="browser" value="chrome"/>
-		<parameter name="browserversion" value="120"/>
+		<parameter name="browserversion" value="127"/>
 		<classes>
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.AccountPageTest" />
 		</classes>
 	</test>
 	
-	<test name="ProductDetails Page Test">
+	<test name="ProductDetails Page Test_Chrome">
 		<parameter name="browser" value="chrome"/>
-		<parameter name="browserversion" value="120"/>
+		<parameter name="browserversion" value="127"/>
 		<classes>
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.ProductDetailsPageTest" />
 		</classes>
 	</test>
 	
-	<test name="Landing Page Test_firefox">
-		<parameter name="browser" value="firefox"/>
-		<parameter name="browserversion" value="115"/>
+	<test name="Landing Page Test_Firefox">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="browserversion" value="127"/>
 		<classes>
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.LandingPageTest" />
 		</classes>
 	</test>
 	
-	<test name="Login Page Test_firefox">
-		<parameter name="browser" value="firefox"/>
-		<parameter name="browserversion" value="115"/>
+	<test name="Login Page Test_Firefox">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="browserversion" value="127"/>
 		<classes>
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.LoginPageTest" />
 		</classes>
 	</test>
 		
-	<test name="Register Page Test">
+	<test name="Register Page Test_Chrome">
 		<parameter name="browser" value="chrome"/>
-		<parameter name="browserversion" value="120"/>
+		<parameter name="browserversion" value="127"/>
 		<classes>
 			<class name="com.qa.OpenCartE2EAutomationProject.Tests.RegisterPageTest" />
 		</classes>
