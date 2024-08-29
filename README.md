@@ -3,7 +3,7 @@ Don't forget to give a ⭐ if you find the project useful.
 This project demonstrates the use of Selenium WebDriver with Java to automate a web Application.
 
 Tech Stack:
-1. JDK 1.17
+1. JDK 17
 2. Maven Build tool
 3. TestNG for test runner and parallel execution
 4. Allure Report and Extent Report for reporting
@@ -68,7 +68,7 @@ Run the following command but replace <test_plan> with the file path of the test
 mvn test -DsuiteXmlFiles=<test_plan>
 
 
-
+In this Project, Selenium grid and dockerized Selenoid grid has also been Implemented. Samples of docker-compose files have been uploaded with the Source Code.
 
 
 
